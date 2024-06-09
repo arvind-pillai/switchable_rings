@@ -1,0 +1,2983 @@
+core.init: Rosetta version: 2017.48.post.dev+119.fordas.devbase.cce4ea9c848 cce4ea9c848fb89054e27458cfec117fb00bd601 git@github.com:RosettaCommons/main.git 2018-04-16T01:42:35
+core.init: command: PyRosetta -ex1 -ex2aro -database /home/sheffler/.conda/envs/worms/lib/python3.6/site-packages/pyrosetta/database
+core.init: 'RNG device' seed mode, using '/dev/urandom', seed=1782985248 seed_offset=0 real_seed=1782985248
+core.init.random: RandomGenerator:init: Normal mode, seed=1782985248 RG_type=mt19937
+[ WARNING ] Resetting the global tracer options, which have already been set.
+[ WARNING ] This will not affect Tracers which are already initialized.
+RUNNING WORMS CWD /mnt/home/apillai1/final_rings_set/C2
+['/home/thuddy/th_home/worms_backup/worms_beta/worms/__main__.py', '@t32_oneDHR.flags']
+check_nc_linear: ['_C', 'NC', 'N_']
+-------------- args ---------------
+    geometry ['Cyclic(2)']
+    bbconn ['_C', 'hingeY', 'NC', 'LHD_NC', 'N_', 'hingeY']
+    config_file []
+    nbblocks [64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64, 64]
+    use_saved_bblocks 0
+    monte_carlo [0.0]
+    parallel 1
+    verbosity 2
+    precache_splices 1
+    precache_splices_and_quit 0
+    pbar 1
+    pbar_interval 10.0
+    context_structure 
+    cachedirs ['']
+    disable_cache 1
+    dbfiles ['/home/apillai1/Bridge/4_fusion_bridge/combinations4.json']
+    dbroot 
+    load_poses 0
+    read_new_pdbs 0
+    run_cache 
+    merge_bblock None
+    no_duplicate_bases 0
+    shuffle_bblocks 1
+    only_merge_bblocks []
+    only_bblocks []
+    only_ivertex []
+    bblock_ranges []
+    merge_segment None
+    min_seg_len 15
+    topology <worms.topology.Topology object at 0x7f4fa4e75588>
+    splice_rms_range 4
+    splice_max_rms 1.0
+    splice_clash_d2 12.25
+    splice_contact_d2 64.0
+    splice_clash_contact_range 40
+    splice_clash_contact_by_helix 1
+    splice_ncontact_cut 10
+    splice_ncontact_no_helix_cut 1
+    splice_nhelix_contacted_cut 1
+    splice_max_chain_length 9999
+    tolerance 0.5
+    lever 25.0
+    min_radius 0.0
+    hash_cart_resl 2.0
+    hash_ori_resl 15.0
+    loose_hash_cart_resl 10.0
+    loose_hash_ori_resl 20.0
+    merged_err_cut 999.0
+    rms_err_cut 3.0
+    ca_clash_dis 3.0
+    disable_clash_check 0
+    max_linear 1000000
+    max_merge 100000
+    max_clash_check 10000
+    max_output 1000
+    max_score0 1.0
+    max_porosity 9000000000.0
+    max_com_redundancy 1.0
+    full_score0sym 0
+    output_from_pose 1
+    output_symmetric 1
+    output_prefix ./worms
+    output_centroid 0
+    output_only_AAAA 0
+    output_short_fnames 0
+    output_only_connected auto
+    cache_sync 0.003
+    postfilt_splice_max_rms 0.7
+    postfilt_splice_rms_length 9
+    postfilt_splice_ncontact_cut 40
+    postfilt_splice_ncontact_no_helix_cut 2
+    postfilt_splice_nhelix_contacted_cut 3
+    db (<worms.database.NoCacheBBlockDB object at 0x7f4f953d1dd8>, <worms.database.NoCacheSpliceDB object at 0x7f4f94e5dcc0>)
+-----------------------------------
+NoCacheBBlockDB nentries: 596
+worms_main, 1 criteria, args:
+================== start job 0 ======================
+output_prefix: ./worms
+criteria: <worms.criteria.cyclic.Cyclic object at 0x7f4fa4e755c0>
+bbspec: [['hingeY', '_C'], ['LHD_NC', 'NC'], ['hingeY', 'N_']]
+precaching splices
+reading pdb /home/apillai1/working/cs_221Y.pdb
+reading pdb /home/apillai1/New_Ring/working_hinges/FF74Y.pdb
+reading pdb /home/apillai1/working/JHB7Yr2.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR62_BA_A_0003_0002.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR57_BA_A_0001_0006.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD289_DHR53_BA_A_0009.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD289_DHR46_BA_A_0003_0002.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR21_BA_A_0003_0006.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR59_BA_A_0001_0003.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD289_DHR39_BA_A_0003_0009.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR53_BA_A_0004_0004.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD278_DHR59_BA_A_0003_0014.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD289_DHR54_BA_A_0006_0006.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR09_BA_A_0006_0004.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD278_DHR52_BA_A_0001_0014.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR54_BA_A_0003_0015.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD278_DHR54_BA_A_0005_0002.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR53_BA_A_0001_0017.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD317_DHR82_BA_A_0001_0011.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD278_DHR54_BA_A_0003_0014.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD278_DHR54_BA_A_0003_0004.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD275_DHR62_BA_A_0001_0005.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD321_DHR62_BA_A_0012_0002.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD321_DHR53_BA_A_0015_0003.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD278_DHR09_BA_A_0006_0004.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD278_DHR54_BA_A_0003_0004.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR21_BA_A_0003_0007.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR54_BA_A_0001_0002.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD289_DHR82_BA_A_0001_0015.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD317_DHR59_BA_A_0003_0003.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD317_DHR80_BA_A_0002_0003.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR82_BA_A_0003_0003.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR59_BA_A_0009_0001.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD278_DHR09_BA_A_0009.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD321_DHR80_BA_A_0006_0002.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD289_DHR59_BA_A_0001_0003.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR53_BA_A_0010_0001.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR54_BA_A_0006_0006.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR59_BA_A_0001_0019.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD321_DHR80_BA_A_0006_0002.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR21_BA_A_0014_0008.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD278_DHR46_BA_A_0003_0011.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR76_BA_A_0001_0020.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD278_DHR09_BA_A_0006_0004.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD289_DHR21_BA_A_0014_0008.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR62_BA_A_0001_0007.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR59_BA_A_0001_0017.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD289_DHR80_BA_A_0003_0001.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR53_BA_A_0005_0013.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD321_DHR62_BA_A_0021_0005.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD278_DHR53_BA_A_0003_0003.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD289_DHR82_BA_A_0005_0006.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD289_DHR53_BA_A_0001_0008.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR21_BA_A_0014_0001.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR21_BA_A_0002_0002.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD317_DHR82_BA_A_0001_0009.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD289_DHR82_BA_A_0001_0012.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR52_BA_A_0006_0002.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR79_BA_A_0003_0004.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR53_BA_A_0006_0001.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD317_DHR54_BA_A_0003_0005.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR59_BA_A_0003_0007.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD278_DHR52_BA_A_0001_0005.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD278_DHR59_BA_A_0003_0014.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD278_DHR54_BA_A_0003_0012.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR82_BA_A_0003_0004.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD278_DHR54_BA_A_0001_0002.pdb
+seg 2 repeating bblocks from 0
+bblocks 0
+    /home/apillai1/working/cs_221Y.pdb
+    /home/apillai1/New_Ring/working_hinges/FF74Y.pdb
+    /home/apillai1/working/JHB7Yr2.pdb
+bblocks 1
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR62_BA_A_0003_0002.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR57_BA_A_0001_0006.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD289_DHR53_BA_A_0009.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD289_DHR46_BA_A_0003_0002.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR21_BA_A_0003_0006.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR59_BA_A_0001_0003.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD289_DHR39_BA_A_0003_0009.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR53_BA_A_0004_0004.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD278_DHR59_BA_A_0003_0014.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD289_DHR54_BA_A_0006_0006.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR09_BA_A_0006_0004.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD278_DHR52_BA_A_0001_0014.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR54_BA_A_0003_0015.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD278_DHR54_BA_A_0005_0002.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR53_BA_A_0001_0017.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD317_DHR82_BA_A_0001_0011.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD278_DHR54_BA_A_0003_0014.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD278_DHR54_BA_A_0003_0004.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD275_DHR62_BA_A_0001_0005.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD321_DHR62_BA_A_0012_0002.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD321_DHR53_BA_A_0015_0003.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD278_DHR09_BA_A_0006_0004.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD278_DHR54_BA_A_0003_0004.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR21_BA_A_0003_0007.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR54_BA_A_0001_0002.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD289_DHR82_BA_A_0001_0015.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD317_DHR59_BA_A_0003_0003.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD317_DHR80_BA_A_0002_0003.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR82_BA_A_0003_0003.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR59_BA_A_0009_0001.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD278_DHR09_BA_A_0009.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD321_DHR80_BA_A_0006_0002.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD289_DHR59_BA_A_0001_0003.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR53_BA_A_0010_0001.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR54_BA_A_0006_0006.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR59_BA_A_0001_0019.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD321_DHR80_BA_A_0006_0002.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR21_BA_A_0014_0008.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD278_DHR46_BA_A_0003_0011.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR76_BA_A_0001_0020.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD278_DHR09_BA_A_0006_0004.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD289_DHR21_BA_A_0014_0008.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR62_BA_A_0001_0007.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR59_BA_A_0001_0017.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD289_DHR80_BA_A_0003_0001.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR53_BA_A_0005_0013.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD321_DHR62_BA_A_0021_0005.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD278_DHR53_BA_A_0003_0003.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD289_DHR82_BA_A_0005_0006.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD289_DHR53_BA_A_0001_0008.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR21_BA_A_0014_0001.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR21_BA_A_0002_0002.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD317_DHR82_BA_A_0001_0009.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD289_DHR82_BA_A_0001_0012.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR52_BA_A_0006_0002.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR79_BA_A_0003_0004.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR53_BA_A_0006_0001.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD317_DHR54_BA_A_0003_0005.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR59_BA_A_0003_0007.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD278_DHR52_BA_A_0001_0005.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD278_DHR59_BA_A_0003_0014.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD278_DHR54_BA_A_0003_0012.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR82_BA_A_0003_0004.pdb
+    /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD278_DHR54_BA_A_0001_0002.pdb
+bblocks 2
+    /home/apillai1/working/cs_221Y.pdb
+    /home/apillai1/New_Ring/working_hinges/FF74Y.pdb
+    /home/apillai1/working/JHB7Yr2.pdb
+bblock queries: ('hingeY', 'LHD_NC', 'hingeY')
+bblock numbers: [3, 64, 3]
+bblocks id: [139979776361608, 139979776437128, 139979776361608]
+bblock0 id  [139979776368560, 139979768474544, 139979776368560]
+base_counts:
+   hingeY     LHD29: 1 base_scaffold: 2
+   LHD_NC     LHD29: 64
+   hingeY     LHD29: 1 base_scaffold: 2
+batch compute_splices, npairs: 384
+precompute_splicedb done
+splice stats: (11,214  2.92%) (14,639  3.81%) 
+memuse for global _shared_ssdag:
+    vertex memuse (kb):  180,010 [5, 180000, 5]
+    edge memuse (kb):        464 [164, 300]
+grow_linear stage0_mbb0000 done, nresults 196, total_samples 2,567,725, samp/sec 95,647, redundant ratio 1.0
+mbb0000 geometry: removing 21  of 110 results
+    mbb0000 nresults after clash/geom check 89
+clear db 1291.37109375 1291.37109375 0.0
+reading pdb /home/apillai1/working/cs_221Y.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR59_BA_A_0009_0001.pdb
+resplicing cyclic chains
+!!!!!!! 0 mseg 0 ['0', '29', '0']
+solution ./worms_mbb0000__0000_105-229_cs_221Y.pdb_ex129_en137_LHD289_DHR59_BA_A_0009_0001.pdb_ex395_en5_cs_221Y.pdb_ex395_en5_ABBB
+ 1375 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR21_BA_A_0002_0002.pdb
+resplicing cyclic chains
+!!!!!!! 0 mseg 0 ['0', '51', '0']
+solution ./worms_mbb0000__0001_204-310_cs_221Y.pdb_ex131_en30_LHD289_DHR21_BA_A_0002_0002.pdb_ex453_en25_cs_221Y.pdb_ex453_en25_AFAA
+ 1376 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR82_BA_A_0003_0003.pdb
+resplicing cyclic chains
+mbb0000 000002 score0 fail 0 2 score0 16.378378597202097 rms -1 grade ABAB
+resplicing cyclic chains
+!!!!!!! 0 mseg 0 ['0', '28', '0']
+solution ./worms_mbb0000__0003_82-202_cs_221Y.pdb_ex130_en69_LHD289_DHR82_BA_A_0003_0003.pdb_ex388_en10_cs_221Y.pdb_ex388_en10_AFAA
+ 1397 MEM dump pdb after
+resplicing cyclic chains
+mbb000000 0004 score0sym fail 3.531018412029748 rms -1 grade ABAA
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR57_BA_A_0001_0006.pdb
+resplicing cyclic chains
+!!!!!!! 0 mseg 0 ['0', '1', '0']
+solution ./worms_mbb0000__0005_190-309_cs_221Y.pdb_ex130_en31_LHD289_DHR57_BA_A_0001_0006.pdb_ex480_en11_cs_221Y.pdb_ex480_en11_ABAA
+ 1419 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD289_DHR80_BA_A_0003_0001.pdb
+resplicing cyclic chains
+mbb000000 0006 score0sym fail 5.470513896539189 rms -1 grade ABAA
+resplicing cyclic chains
+!!!!!!! 0 mseg 0 ['0', '51', '0']
+solution ./worms_mbb0000__0007_204-306_cs_221Y.pdb_ex127_en26_LHD289_DHR21_BA_A_0002_0002.pdb_ex453_en25_cs_221Y.pdb_ex453_en25_AFAA
+ 1423 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR82_BA_A_0003_0004.pdb
+resplicing cyclic chains
+!!!!!!! 0 mseg 0 ['0', '62', '0']
+solution ./worms_mbb0000__0008_148-248_cs_221Y.pdb_ex124_en120_LHD289_DHR82_BA_A_0003_0004.pdb_ex474_en24_cs_221Y.pdb_ex474_en24_ABAB
+ 1421 MEM dump pdb after
+resplicing cyclic chains
+mbb0000 000009 score0 fail 0 9 score0 2.2039126600920214 rms -1 grade AFAA
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR09_BA_A_0006_0004.pdb
+resplicing cyclic chains
+!!!!!!! 0 mseg 0 ['0', '10', '0']
+solution ./worms_mbb0000__0010_149-253_cs_221Y.pdb_ex129_en35_LHD289_DHR09_BA_A_0006_0004.pdb_ex454_en25_cs_221Y.pdb_ex454_en25_ABAB
+ 1415 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 0 mseg 0 ['0', '1', '0']
+solution ./worms_mbb0000__0011_187-309_cs_221Y.pdb_ex130_en31_LHD289_DHR57_BA_A_0001_0006.pdb_ex477_en8_cs_221Y.pdb_ex477_en8_ABAA
+ 1420 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD278_DHR52_BA_A_0001_0005.pdb
+resplicing cyclic chains
+!!!!!!! 0 mseg 0 ['0', '59', '0']
+solution ./worms_mbb0000__0012_127-243_cs_221Y.pdb_ex143_en51_LHD278_DHR52_BA_A_0001_0005.pdb_ex389_en27_cs_221Y.pdb_ex389_en27_ABAA
+ 1435 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 0 mseg 0 ['0', '10', '0']
+solution ./worms_mbb0000__0013_150-253_cs_221Y.pdb_ex129_en35_LHD289_DHR09_BA_A_0006_0004.pdb_ex455_en26_cs_221Y.pdb_ex455_en26_ABAB
+ 1444 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD289_DHR54_BA_A_0006_0006.pdb
+resplicing cyclic chains
+mbb0000 000014 score0 fail 0 14 score0 2.1605719931768155 rms -1 grade AFAB
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR53_BA_A_0006_0001.pdb
+resplicing cyclic chains
+mbb0000 000015 score0 fail 0 15 score0 2.222777706432678 rms -1 grade AFAB
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR21_BA_A_0014_0008.pdb
+resplicing cyclic chains
+!!!!!!! 0 mseg 0 ['0', '37', '0']
+solution ./worms_mbb0000__0016_142-261_cs_221Y.pdb_ex125_en106_LHD289_DHR21_BA_A_0014_0008.pdb_ex402_en6_cs_221Y.pdb_ex402_en6_AFAA
+ 1451 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 0 mseg 0 ['0', '28', '0']
+solution ./worms_mbb0000__0017_128-226_cs_221Y.pdb_ex126_en51_LHD289_DHR82_BA_A_0003_0003.pdb_ex434_en28_cs_221Y.pdb_ex434_en28_AFAA
+ 1460 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 0 mseg 0 ['0', '1', '0']
+solution ./worms_mbb0000__0018_186-306_cs_221Y.pdb_ex127_en28_LHD289_DHR57_BA_A_0001_0006.pdb_ex476_en7_cs_221Y.pdb_ex476_en7_ABAA
+ 1446 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR21_BA_A_0003_0006.pdb
+resplicing cyclic chains
+!!!!!!! 0 mseg 0 ['0', '4', '0']
+solution ./worms_mbb0000__0019_208-329_cs_221Y.pdb_ex127_en108_LHD289_DHR21_BA_A_0003_0006.pdb_ex445_en6_cs_221Y.pdb_ex445_en6_AFAA
+ 1464 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR21_BA_A_0014_0001.pdb
+resplicing cyclic chains
+!!!!!!! 0 mseg 0 ['0', '50', '0']
+solution ./worms_mbb0000__0020_204-317_cs_221Y.pdb_ex123_en28_LHD289_DHR21_BA_A_0014_0001.pdb_ex441_en10_cs_221Y.pdb_ex441_en10_AFAA
+ 1456 MEM dump pdb after
+resplicing cyclic chains
+mbb0000 000021 score0 fail 0 21 score0 1.463988450404747 rms -1 grade AFAA
+resplicing cyclic chains
+!!!!!!! 0 mseg 0 ['0', '62', '0']
+solution ./worms_mbb0000__0022_193-293_cs_221Y.pdb_ex126_en71_LHD289_DHR82_BA_A_0003_0004.pdb_ex519_en26_cs_221Y.pdb_ex519_en26_ABAB
+ 1481 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD289_DHR59_BA_A_0001_0003.pdb
+resplicing cyclic chains
+mbb0000 000023 score0 fail 0 23 score0 1.0556216199451127 rms -1 grade ABAA
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD289_DHR82_BA_A_0001_0012.pdb
+resplicing cyclic chains
+!!!!!!! 0 mseg 0 ['0', '53', '0']
+solution ./worms_mbb0000__0024_192-289_cs_221Y.pdb_ex122_en67_LHD289_DHR82_BA_A_0001_0012.pdb_ex518_en25_cs_221Y.pdb_ex518_en25_ABAB
+ 1473 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD278_DHR54_BA_A_0005_0002.pdb
+resplicing cyclic chains
+mbb000000 0025 score0sym fail 7.144380545904568 rms -1 grade AFAB
+resplicing cyclic chains
+!!!!!!! 0 mseg 0 ['0', '53', '0']
+solution ./worms_mbb0000__0026_151-249_cs_221Y.pdb_ex125_en121_LHD289_DHR82_BA_A_0001_0012.pdb_ex477_en27_cs_221Y.pdb_ex477_en27_ABAB
+ 1491 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD289_DHR21_BA_A_0014_0008.pdb
+resplicing cyclic chains
+!!!!!!! 0 mseg 0 ['0', '41', '0']
+solution ./worms_mbb0000__0027_144-259_cs_221Y.pdb_ex123_en104_LHD289_DHR21_BA_A_0014_0008.pdb_ex404_en8_cs_221Y.pdb_ex404_en8_ABAA
+ 1493 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD289_DHR53_BA_A_0001_0008.pdb
+resplicing cyclic chains
+mbb000000 0028 score0sym fail 3.460412953488004 rms -1 grade ABAA
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR53_BA_A_0010_0001.pdb
+resplicing cyclic chains
+mbb0000 000029 score0 fail 0 29 score0 108.20523094613185 rms -1 grade ABAA
+resplicing cyclic chains
+!!!!!!! 0 mseg 0 ['0', '4', '0']
+solution ./worms_mbb0000__0030_209-302_cs_221Y.pdb_ex124_en6_LHD289_DHR21_BA_A_0003_0006.pdb_ex446_en31_cs_221Y.pdb_ex446_en31_AFAB
+ 1497 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR52_BA_A_0006_0002.pdb
+resplicing cyclic chains
+!!!!!!! 0 mseg 0 ['0', '54', '0']
+solution ./worms_mbb0000__0031_107-224_cs_221Y.pdb_ex124_en141_LHD289_DHR52_BA_A_0006_0002.pdb_ex385_en7_cs_221Y.pdb_ex385_en7_AFBB
+ 1507 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 0 mseg 0 ['0', '28', '0']
+solution ./worms_mbb0000__0032_122-214_cs_221Y.pdb_ex122_en16_LHD289_DHR82_BA_A_0003_0003.pdb_ex428_en30_cs_221Y.pdb_ex428_en30_AFAB
+ 1505 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD289_DHR82_BA_A_0001_0015.pdb
+resplicing cyclic chains
+!!!!!!! 0 mseg 0 ['0', '25', '0']
+solution ./worms_mbb0000__0033_79-201_cs_221Y.pdb_ex129_en68_LHD289_DHR82_BA_A_0001_0015.pdb_ex385_en7_cs_221Y.pdb_ex385_en7_AFAA
+ 1525 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 0 mseg 0 ['0', '44', '0']
+solution ./worms_mbb0000__0034_118-236_cs_221Y.pdb_ex128_en66_LHD289_DHR80_BA_A_0003_0001.pdb_ex418_en10_cs_221Y.pdb_ex418_en10_AFAA
+ 1528 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR53_BA_A_0005_0013.pdb
+resplicing cyclic chains
+!!!!!!! 0 mseg 0 ['0', '45', '0']
+solution ./worms_mbb0000__0035_128-253_cs_221Y.pdb_ex131_en101_LHD289_DHR53_BA_A_0005_0013.pdb_ex385_en6_cs_221Y.pdb_ex385_en6_ABAA
+ 1528 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR21_BA_A_0003_0007.pdb
+resplicing cyclic chains
+mbb0000 000036 score0 fail 0 36 score0 1.0717955466186573 rms -1 grade AFAB
+resplicing cyclic chains
+!!!!!!! 0 mseg 0 ['0', '33', '0']
+solution ./worms_mbb0000__0037_208-327_cs_221Y.pdb_ex125_en77_LHD289_DHR53_BA_A_0010_0001.pdb_ex455_en6_cs_221Y.pdb_ex455_en6_ABAA
+ 1545 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 0 mseg 0 ['0', '10', '0']
+solution ./worms_mbb0000__0038_151-247_cs_221Y.pdb_ex123_en29_LHD289_DHR09_BA_A_0006_0004.pdb_ex456_en27_cs_221Y.pdb_ex456_en27_ABAB
+ 1525 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD317_DHR59_BA_A_0003_0003.pdb
+resplicing cyclic chains
+!!!!!!! 0 mseg 0 ['0', '26', '0']
+solution ./worms_mbb0000__0039_184-306_cs_221Y.pdb_ex130_en9_LHD317_DHR59_BA_A_0003_0003.pdb_ex459_en8_cs_221Y.pdb_ex459_en8_ABAA
+ 1563 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 0 mseg 0 ['0', '29', '0']
+solution ./worms_mbb0000__0040_209-301_cs_221Y.pdb_ex123_en28_LHD289_DHR59_BA_A_0009_0001.pdb_ex499_en31_cs_221Y.pdb_ex499_en31_AFAB
+ 1560 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD289_DHR82_BA_A_0005_0006.pdb
+resplicing cyclic chains
+!!!!!!! 0 mseg 0 ['0', '48', '0']
+solution ./worms_mbb0000__0041_193-292_cs_221Y.pdb_ex125_en12_LHD289_DHR82_BA_A_0005_0006.pdb_ex526_en26_cs_221Y.pdb_ex526_en26_ABAB
+ 1553 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 0 mseg 0 ['0', '50', '0']
+solution ./worms_mbb0000__0042_144-259_cs_221Y.pdb_ex123_en81_LHD289_DHR21_BA_A_0014_0001.pdb_ex381_en8_cs_221Y.pdb_ex381_en8_ABAA
+ 1553 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 0 mseg 0 ['0', '41', '0']
+solution ./worms_mbb0000__0043_142-258_cs_221Y.pdb_ex122_en103_LHD289_DHR21_BA_A_0014_0008.pdb_ex402_en6_cs_221Y.pdb_ex402_en6_ABAA
+ 1553 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR54_BA_A_0001_0002.pdb
+resplicing cyclic chains
+mbb0000 000044 score0 fail 0 44 score0 2.6507401502412247 rms -1 grade AFAA
+resplicing cyclic chains
+mbb0000 000045 score0 fail 0 45 score0 17.068906884461963 rms -1 grade ABAB
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR53_BA_A_0004_0004.pdb
+resplicing cyclic chains
+!!!!!!! 0 mseg 0 ['0', '7', '0']
+solution ./worms_mbb0000__0046_207-349_cs_221Y.pdb_ex147_en148_LHD289_DHR53_BA_A_0004_0004.pdb_ex461_en5_cs_221Y.pdb_ex461_en5_AFAB
+ 1569 MEM dump pdb after
+resplicing cyclic chains
+mbb000000 0047 score0sym fail 2.3852276417759173 rms -1 grade ABAA
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR62_BA_A_0001_0007.pdb
+resplicing cyclic chains
+mbb000000 0048 score0sym fail 243.11464517215342 rms -1 grade AFAA
+resplicing cyclic chains
+!!!!!!! 0 mseg 0 ['0', '25', '0']
+solution ./worms_mbb0000__0049_81-200_cs_221Y.pdb_ex128_en67_LHD289_DHR82_BA_A_0001_0015.pdb_ex387_en9_cs_221Y.pdb_ex387_en9_AFAA
+ 1574 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 0 mseg 0 ['0', '28', '0']
+solution ./worms_mbb0000__0050_84-185_cs_221Y.pdb_ex124_en49_LHD289_DHR82_BA_A_0003_0003.pdb_ex390_en23_cs_221Y.pdb_ex390_en23_AFAA
+ 1573 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR76_BA_A_0001_0020.pdb
+resplicing cyclic chains
+mbb000000 0051 score0sym fail 9.901386138209144 rms -1 grade AFAA
+resplicing cyclic chains
+mbb0000 000052 score0 fail 0 52 score0 2.4813738703942128 rms -1 grade AFAA
+resplicing cyclic chains
+mbb0000 000053 score0 fail 0 53 score0 1.8878920185547212 rms -1 grade ABAA
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD321_DHR80_BA_A_0006_0002.pdb
+resplicing cyclic chains
+mbb0000 000054 score0 fail 0 54 score0 172.98438170424038 rms -1 grade ABAB
+resplicing cyclic chains
+mbb0000 000055 score0 fail 0 55 score0 2.117522813609035 rms -1 grade ABAA
+resplicing cyclic chains
+!!!!!!! 0 mseg 0 ['0', '45', '0']
+solution ./worms_mbb0000__0056_211-342_cs_221Y.pdb_ex144_en55_LHD289_DHR53_BA_A_0005_0013.pdb_ex468_en13_cs_221Y.pdb_ex468_en13_AFAA
+ 1578 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD289_DHR53_BA_A_0009.pdb
+resplicing cyclic chains
+mbb000000 0057 score0sym fail 12.581156154951008 rms -1 grade ABAA
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR54_BA_A_0003_0015.pdb
+resplicing cyclic chains
+mbb0000 000058 score0 fail 0 58 score0 2.816566941361369 rms -1 grade AFAA
+resplicing cyclic chains
+!!!!!!! 0 mseg 0 ['0', '50', '0']
+solution ./worms_mbb0000__0059_207-332_cs_221Y.pdb_ex130_en100_LHD289_DHR21_BA_A_0014_0001.pdb_ex444_en5_cs_221Y.pdb_ex444_en5_AFAA
+ 1606 MEM dump pdb after
+resplicing cyclic chains
+mbb0000 000060 score0 fail 0 60 score0 2.9244714517503057 rms -1 grade AFAA
+resplicing cyclic chains
+!!!!!!! 0 mseg 0 ['0', '39', '0']
+solution ./worms_mbb0000__0061_186-309_cs_221Y.pdb_ex130_en5_LHD289_DHR76_BA_A_0001_0020.pdb_ex467_en7_cs_221Y.pdb_ex467_en7_ABAA
+ 1600 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 0 mseg 0 ['0', '10', '0']
+solution ./worms_mbb0000__0062_208-300_cs_221Y.pdb_ex122_en15_LHD289_DHR09_BA_A_0006_0004.pdb_ex513_en30_cs_221Y.pdb_ex513_en30_AFAB
+ 1600 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 0 mseg 0 ['0', '25', '0']
+solution ./worms_mbb0000__0063_181-275_cs_221Y.pdb_ex126_en123_LHD289_DHR82_BA_A_0001_0015.pdb_ex487_en32_cs_221Y.pdb_ex487_en32_AFAA
+ 1605 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR59_BA_A_0001_0017.pdb
+resplicing cyclic chains
+!!!!!!! 0 mseg 0 ['0', '43', '0']
+solution ./worms_mbb0000__0064_213-316_cs_221Y.pdb_ex131_en43_LHD289_DHR59_BA_A_0001_0017.pdb_ex510_en28_cs_221Y.pdb_ex510_en28_ABAB
+ 1600 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR59_BA_A_0003_0007.pdb
+resplicing cyclic chains
+!!!!!!! 0 mseg 0 ['0', '58', '0']
+solution ./worms_mbb0000__0065_212-309_cs_221Y.pdb_ex123_en43_LHD289_DHR59_BA_A_0003_0007.pdb_ex502_en26_cs_221Y.pdb_ex502_en26_AFAA
+ 1630 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR59_BA_A_0001_0019.pdb
+resplicing cyclic chains
+mbb000000 0066 score0sym fail 296.8243377794449 rms -1 grade AFAB
+resplicing cyclic chains
+mbb0000 000067 score0 fail 0 67 score0 2.6084147597448295 rms -1 grade AFAB
+resplicing cyclic chains
+mbb000000 0068 score0sym fail 214.9606364777546 rms -1 grade AFAB
+resplicing cyclic chains
+!!!!!!! 0 mseg 0 ['0', '10', '0']
+solution ./worms_mbb0000__0069_210-300_cs_221Y.pdb_ex122_en15_LHD289_DHR09_BA_A_0006_0004.pdb_ex515_en32_cs_221Y.pdb_ex515_en32_AFAB
+ 1617 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD278_DHR54_BA_A_0003_0012.pdb
+resplicing cyclic chains
+mbb0000 000070 score0 fail 0 70 score0 1.0243126268916496 rms -1 grade AFAB
+resplicing cyclic chains
+!!!!!!! 0 mseg 0 ['0', '50', '0']
+solution ./worms_mbb0000__0071_142-261_cs_221Y.pdb_ex125_en83_LHD289_DHR21_BA_A_0014_0001.pdb_ex379_en6_cs_221Y.pdb_ex379_en6_ABAA
+ 1627 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 0 mseg 0 ['0', '1', '0']
+solution ./worms_mbb0000__0072_185-310_cs_221Y.pdb_ex131_en32_LHD289_DHR57_BA_A_0001_0006.pdb_ex475_en6_cs_221Y.pdb_ex475_en6_ABAA
+ 1625 MEM dump pdb after
+resplicing cyclic chains
+mbb0000 000073 score0 fail 0 73 score0 2.119708260981204 rms -1 grade ABAA
+resplicing cyclic chains
+mbb0000 000074 score0 fail 0 74 score0 217.83861516679917 rms -1 grade ABAA
+resplicing cyclic chains
+mbb000000 0075 score0sym fail 209.6911645468299 rms -1 grade AFAB
+resplicing cyclic chains
+mbb0000 000076 score0 fail 0 76 score0 111.89995951876017 rms -1 grade AFAA
+resplicing cyclic chains
+mbb000000 0077 score0sym fail 9.771277224636545 rms -1 grade AFAB
+resplicing cyclic chains
+!!!!!!! 0 mseg 0 ['0', '29', '0']
+solution ./worms_mbb0000__0078_105-231_cs_221Y.pdb_ex131_en139_LHD289_DHR59_BA_A_0009_0001.pdb_ex395_en5_cs_221Y.pdb_ex395_en5_ABBB
+ 1626 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 0 mseg 0 ['0', '25', '0']
+solution ./worms_mbb0000__0079_81-198_cs_221Y.pdb_ex126_en65_LHD289_DHR82_BA_A_0001_0015.pdb_ex387_en9_cs_221Y.pdb_ex387_en9_AFAA
+ 1631 MEM dump pdb after
+resplicing cyclic chains
+mbb0000 000080 score0 fail 0 80 score0 2.4080299315253777 rms -1 grade ABAB
+resplicing cyclic chains
+mbb0000 000081 score0 fail 0 81 score0 297.55967206371855 rms -1 grade ABAB
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD317_DHR80_BA_A_0002_0003.pdb
+resplicing cyclic chains
+!!!!!!! 0 mseg 0 ['0', '27', '0']
+solution ./worms_mbb0000__0082_183-297_cs_221Y.pdb_ex125_en19_LHD317_DHR80_BA_A_0002_0003.pdb_ex484_en11_cs_221Y.pdb_ex484_en11_ABAA
+ 1657 MEM dump pdb after
+resplicing cyclic chains
+mbb0000 000083 score0 fail 0 83 score0 77.40418607763526 rms -1 grade ABAB
+resplicing cyclic chains
+!!!!!!! 0 mseg 0 ['0', '49', '0']
+solution ./worms_mbb0000__0084_82-200_cs_221Y.pdb_ex128_en48_LHD289_DHR53_BA_A_0001_0008.pdb_ex339_en10_cs_221Y.pdb_ex339_en10_AFAA
+ 1635 MEM dump pdb after
+resplicing cyclic chains
+mbb0000 000085 score0 fail 0 85 score0 1.1875743155693508 rms -1 grade AFAB
+resplicing cyclic chains
+mbb000000 0086 score0sym fail 97.00110714773655 rms -1 grade AFAA
+resplicing cyclic chains
+!!!!!!! 0 mseg 0 ['0', '62', '0']
+solution ./worms_mbb0000__0087_191-290_cs_221Y.pdb_ex123_en68_LHD289_DHR82_BA_A_0003_0004.pdb_ex517_en24_cs_221Y.pdb_ex517_en24_ABAB
+ 1651 MEM dump pdb after
+resplicing cyclic chains
+mbb000000 0088 score0sym fail 4.083413367689138 rms -1 grade ABAA
+use new vertex 0
+use new vertex 2
+grow_linear stage0_mbb0001 done, nresults 1,369, total_samples 16,691,256, samp/sec 201,406, redundant ratio 1.0
+mbb0001 geometry: removing 56  of 374 results
+    mbb0001 nresults after clash/geom check 318
+clear db 1637.66796875 1637.66796875 0.0
+reading pdb /home/apillai1/New_Ring/working_hinges/FF74Y.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD289_DHR53_BA_A_0009.pdb
+resplicing cyclic chains
+mbb0001 000000 score0 fail 1 0 score0 47.67285082402144 rms -1 grade AAAA
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR52_BA_A_0006_0002.pdb
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '54', '0']
+solution ./worms_mbb0001__0001_207-410_FF74Y.pdb_ex214_en57_LHD289_DHR52_BA_A_0006_0002.pdb_ex485_en11_FF74Y.pdb_ex485_en11_ABAA
+ 1693 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR62_BA_A_0001_0007.pdb
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '42', '0']
+solution ./worms_mbb0001__0002_204-386_FF74Y.pdb_ex197_en103_LHD289_DHR62_BA_A_0001_0007.pdb_ex462_en15_FF74Y.pdb_ex462_en15_ABAA
+ 1693 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR53_BA_A_0006_0001.pdb
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '56', '0']
+solution ./worms_mbb0001__0003_122-299_FF74Y.pdb_ex196_en141_LHD289_DHR53_BA_A_0006_0001.pdb_ex376_en19_FF74Y.pdb_ex376_en19_ABAB
+ 1693 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '54', '0']
+solution ./worms_mbb0001__0004_169-350_FF74Y.pdb_ex197_en80_LHD289_DHR52_BA_A_0006_0002.pdb_ex447_en16_FF74Y.pdb_ex447_en16_AAAA
+ 1694 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD278_DHR52_BA_A_0001_0005.pdb
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '59', '0']
+solution ./worms_mbb0001__0005_210-393_FF74Y.pdb_ex190_en13_LHD278_DHR52_BA_A_0001_0005.pdb_ex472_en7_FF74Y.pdb_ex472_en7_ABAA
+ 1695 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR59_BA_A_0003_0007.pdb
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '58', '0']
+solution ./worms_mbb0001__0006_181-334_FF74Y.pdb_ex191_en53_LHD289_DHR59_BA_A_0003_0007.pdb_ex471_en38_FF74Y.pdb_ex471_en38_ABAA
+ 1691 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR21_BA_A_0002_0002.pdb
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '51', '0']
+solution ./worms_mbb0001__0007_189-350_FF74Y.pdb_ex200_en120_LHD289_DHR21_BA_A_0002_0002.pdb_ex438_en39_FF74Y.pdb_ex438_en39_ABAA
+ 1707 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD289_DHR80_BA_A_0003_0001.pdb
+resplicing cyclic chains
+mbb000001 0008 score0sym fail 143.42261312870232 rms -1 grade AFAA
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '42', '0']
+solution ./worms_mbb0001__0009_85-250_FF74Y.pdb_ex190_en146_LHD289_DHR62_BA_A_0001_0007.pdb_ex343_en25_FF74Y.pdb_ex343_en25_ABAB
+ 1707 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '54', '0']
+solution ./worms_mbb0001__0010_83-286_FF74Y.pdb_ex226_en55_LHD289_DHR52_BA_A_0006_0002.pdb_ex361_en23_FF74Y.pdb_ex361_en23_ABAA
+ 1718 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD317_DHR80_BA_A_0002_0003.pdb
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '27', '0']
+solution ./worms_mbb0001__0011_95-243_FF74Y.pdb_ex193_en130_LHD317_DHR80_BA_A_0002_0003.pdb_ex396_en45_FF74Y.pdb_ex396_en45_ABAB
+ 1714 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR59_BA_A_0009_0001.pdb
+resplicing cyclic chains
+mbb0001 000012 score0 fail 1 12 score0 23.369992319296983 rms -1 grade ABAA
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR76_BA_A_0001_0020.pdb
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '39', '0']
+solution ./worms_mbb0001__0013_186-372_FF74Y.pdb_ex195_en78_LHD289_DHR76_BA_A_0001_0020.pdb_ex467_en9_FF74Y.pdb_ex467_en9_ABAA
+ 1750 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR82_BA_A_0003_0004.pdb
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '62', '0']
+solution ./worms_mbb0001__0014_183-393_FF74Y.pdb_ex226_en131_LHD289_DHR82_BA_A_0003_0004.pdb_ex509_en16_FF74Y.pdb_ex509_en16_AAAA
+ 1760 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '54', '0']
+solution ./worms_mbb0001__0015_171-350_FF74Y.pdb_ex197_en80_LHD289_DHR52_BA_A_0006_0002.pdb_ex449_en18_FF74Y.pdb_ex449_en18_AAAA
+ 1753 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '54', '0']
+solution ./worms_mbb0001__0016_82-285_FF74Y.pdb_ex225_en54_LHD289_DHR52_BA_A_0006_0002.pdb_ex360_en22_FF74Y.pdb_ex360_en22_ABAA
+ 1748 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD317_DHR59_BA_A_0003_0003.pdb
+resplicing cyclic chains
+mbb000001 0017 score0sym fail 92.41739422255256 rms -1 grade AAAA
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '26', '0']
+solution ./worms_mbb0001__0018_137-271_FF74Y.pdb_ex185_en6_LHD317_DHR59_BA_A_0003_0003.pdb_ex412_en51_FF74Y.pdb_ex412_en51_AFAA
+ 1761 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD278_DHR59_BA_A_0003_0014.pdb
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '60', '0']
+solution ./worms_mbb0001__0019_186-369_FF74Y.pdb_ex219_en33_LHD278_DHR59_BA_A_0003_0014.pdb_ex487_en36_FF74Y.pdb_ex487_en36_AAAA
+ 1759 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '54', '0']
+solution ./worms_mbb0001__0020_126-300_FF74Y.pdb_ex190_en80_LHD289_DHR52_BA_A_0006_0002.pdb_ex404_en16_FF74Y.pdb_ex404_en16_ABAA
+ 1761 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '54', '0']
+solution ./worms_mbb0001__0021_169-359_FF74Y.pdb_ex213_en135_LHD289_DHR52_BA_A_0006_0002.pdb_ex447_en23_FF74Y.pdb_ex447_en23_ABAA
+ 1763 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR79_BA_A_0003_0004.pdb
+resplicing cyclic chains
+mbb0001 000022 score0 fail 1 22 score0 1.1545948752622255 rms -1 grade ABAA
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '55', '0']
+solution ./worms_mbb0001__0023_181-367_FF74Y.pdb_ex193_en39_LHD289_DHR79_BA_A_0003_0004.pdb_ex512_en7_FF74Y.pdb_ex512_en7_AAAA
+ 1766 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR53_BA_A_0005_0013.pdb
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '45', '0']
+solution ./worms_mbb0001__0024_80-247_FF74Y.pdb_ex187_en142_LHD289_DHR53_BA_A_0005_0013.pdb_ex337_en20_FF74Y.pdb_ex337_en20_ABAB
+ 1768 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '54', '0']
+solution ./worms_mbb0001__0025_126-316_FF74Y.pdb_ex213_en6_LHD289_DHR52_BA_A_0006_0002.pdb_ex404_en23_FF74Y.pdb_ex404_en23_ABAA
+ 1789 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '27', '0']
+solution ./worms_mbb0001__0026_184-390_FF74Y.pdb_ex227_en6_LHD317_DHR80_BA_A_0002_0003.pdb_ex485_en21_FF74Y.pdb_ex485_en21_ABAA
+ 1780 MEM dump pdb after
+resplicing cyclic chains
+mbb0001 000027 score0 fail 1 27 score0 2.3952023904697834 rms -1 grade AAAA
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR53_BA_A_0001_0017.pdb
+resplicing cyclic chains
+mbb0001 000028 score0 fail 1 28 score0 2.096974251213877 rms -1 grade ABBB
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '45', '0']
+solution ./worms_mbb0001__0029_125-300_FF74Y.pdb_ex197_en145_LHD289_DHR53_BA_A_0005_0013.pdb_ex382_en22_FF74Y.pdb_ex382_en22_ABAB
+ 1780 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '45', '0']
+solution ./worms_mbb0001__0030_78-250_FF74Y.pdb_ex197_en102_LHD289_DHR53_BA_A_0005_0013.pdb_ex335_en25_FF74Y.pdb_ex335_en25_AFAA
+ 1780 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD317_DHR82_BA_A_0001_0009.pdb
+resplicing cyclic chains
+mbb0001 000031 score0 fail 1 31 score0 2.0990557598473667 rms -1 grade ABAA
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR53_BA_A_0004_0004.pdb
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '7', '0']
+solution ./worms_mbb0001__0032_85-265_FF74Y.pdb_ex198_en103_LHD289_DHR53_BA_A_0004_0004.pdb_ex339_en18_FF74Y.pdb_ex339_en18_AAAA
+ 1787 MEM dump pdb after
+resplicing cyclic chains
+Warning: junction residue not helix:  190
+mbb0001 000033 score0 fail 1 33 score0 30.796307182496676 rms -1 grade AFBB
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD289_DHR53_BA_A_0001_0008.pdb
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '49', '0']
+solution ./worms_mbb0001__0034_210-391_FF74Y.pdb_ex195_en143_LHD289_DHR53_BA_A_0001_0008.pdb_ex467_en14_FF74Y.pdb_ex467_en14_ABAB
+ 1806 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '45', '0']
+solution ./worms_mbb0001__0035_121-301_FF74Y.pdb_ex198_en146_LHD289_DHR53_BA_A_0005_0013.pdb_ex378_en18_FF74Y.pdb_ex378_en18_ABAB
+ 1794 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '49', '0']
+solution ./worms_mbb0001__0036_107-313_FF74Y.pdb_ex212_en120_LHD289_DHR53_BA_A_0001_0008.pdb_ex364_en6_FF74Y.pdb_ex364_en6_AFAA
+ 1799 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '60', '0']
+solution ./worms_mbb0001__0037_191-351_FF74Y.pdb_ex201_en15_LHD278_DHR59_BA_A_0003_0014.pdb_ex492_en41_FF74Y.pdb_ex492_en41_AAAA
+ 1798 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '54', '0']
+solution ./worms_mbb0001__0038_80-282_FF74Y.pdb_ex222_en51_LHD289_DHR52_BA_A_0006_0002.pdb_ex358_en20_FF74Y.pdb_ex358_en20_ABAA
+ 1806 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD289_DHR21_BA_A_0014_0008.pdb
+resplicing cyclic chains
+mbb0001 000039 score0 fail 1 39 score0 51.849642331508164 rms -1 grade AFAA
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD278_DHR09_BA_A_0006_0004.pdb
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '21', '0']
+solution ./worms_mbb0001__0040_149-338_FF74Y.pdb_ex200_en60_LHD278_DHR09_BA_A_0006_0004.pdb_ex451_en11_FF74Y.pdb_ex451_en11_AAAA
+ 1809 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '59', '0']
+solution ./worms_mbb0001__0041_193-380_FF74Y.pdb_ex223_en32_LHD278_DHR52_BA_A_0001_0005.pdb_ex455_en36_FF74Y.pdb_ex455_en36_AAAA
+ 1808 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR59_BA_A_0001_0019.pdb
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '35', '0']
+solution ./worms_mbb0001__0042_203-384_FF74Y.pdb_ex215_en39_LHD289_DHR59_BA_A_0001_0019.pdb_ex467_en34_FF74Y.pdb_ex467_en34_ABAA
+ 1817 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR09_BA_A_0006_0004.pdb
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '10', '0']
+solution ./worms_mbb0001__0043_149-328_FF74Y.pdb_ex190_en64_LHD289_DHR09_BA_A_0006_0004.pdb_ex454_en11_FF74Y.pdb_ex454_en11_AAAA
+ 1818 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '39', '0']
+solution ./worms_mbb0001__0044_206-336_FF74Y.pdb_ex181_en13_LHD289_DHR76_BA_A_0001_0020.pdb_ex487_en51_FF74Y.pdb_ex487_en51_AFAA
+ 1823 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '58', '0']
+solution ./worms_mbb0001__0045_203-390_FF74Y.pdb_ex228_en53_LHD289_DHR59_BA_A_0003_0007.pdb_ex493_en41_FF74Y.pdb_ex493_en41_ABAA
+ 1826 MEM dump pdb after
+resplicing cyclic chains
+mbb0001 000046 score0 fail 1 46 score0 66.77830940113368 rms -1 grade AFAB
+resplicing cyclic chains
+mbb0001 000047 score0 fail 1 47 score0 3.4135461439430177 rms -1 grade ABAB
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD289_DHR39_BA_A_0003_0009.pdb
+resplicing cyclic chains
+mbb0001 000048 score0 fail 1 48 score0 5.399015756183349 rms -1 grade AFAB
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '41', '0']
+solution ./worms_mbb0001__0049_191-363_FF74Y.pdb_ex182_en29_LHD289_DHR21_BA_A_0014_0008.pdb_ex451_en10_FF74Y.pdb_ex451_en10_ABAA
+ 1826 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '49', '0']
+solution ./worms_mbb0001__0050_80-247_FF74Y.pdb_ex187_en142_LHD289_DHR53_BA_A_0001_0008.pdb_ex337_en20_FF74Y.pdb_ex337_en20_ABAB
+ 1826 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '29', '0']
+solution ./worms_mbb0001__0051_188-368_FF74Y.pdb_ex187_en89_LHD289_DHR59_BA_A_0009_0001.pdb_ex478_en7_FF74Y.pdb_ex478_en7_ABAA
+ 1821 MEM dump pdb after
+resplicing cyclic chains
+mbb000001 0052 score0sym fail 301.15239935287826 rms -1 grade ABAA
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD289_DHR82_BA_A_0005_0006.pdb
+resplicing cyclic chains
+mbb0001 000053 score0 fail 1 53 score0 20.911414844319047 rms -1 grade AAAA
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD278_DHR54_BA_A_0003_0004.pdb
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '17', '0']
+solution ./worms_mbb0001__0054_83-286_FF74Y.pdb_ex211_en93_LHD278_DHR54_BA_A_0003_0004.pdb_ex365_en8_FF74Y.pdb_ex365_en8_ABAA
+ 1840 MEM dump pdb after
+resplicing cyclic chains
+mbb000001 0055 score0sym fail 4.368081652840017 rms -1 grade AFAA
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR53_BA_A_0010_0001.pdb
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '33', '0']
+solution ./worms_mbb0001__0056_211-389_FF74Y.pdb_ex193_en112_LHD289_DHR53_BA_A_0010_0001.pdb_ex458_en15_FF74Y.pdb_ex458_en15_ABAA
+ 1850 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '21', '0']
+solution ./worms_mbb0001__0057_149-352_FF74Y.pdb_ex221_en36_LHD278_DHR09_BA_A_0006_0004.pdb_ex451_en18_FF74Y.pdb_ex451_en18_AAAA
+ 1843 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '51', '0']
+solution ./worms_mbb0001__0058_187-341_FF74Y.pdb_ex198_en118_LHD289_DHR21_BA_A_0002_0002.pdb_ex436_en44_FF74Y.pdb_ex436_en44_ABAA
+ 1844 MEM dump pdb after
+resplicing cyclic chains
+mbb0001 000059 score0 fail 1 59 score0 13.957925356114186 rms -1 grade ABAB
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR21_BA_A_0003_0007.pdb
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '23', '0']
+solution ./worms_mbb0001__0060_203-373_FF74Y.pdb_ex191_en31_LHD289_DHR21_BA_A_0003_0007.pdb_ex436_en21_FF74Y.pdb_ex436_en21_AFAA
+ 1839 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '54', '0']
+solution ./worms_mbb0001__0061_211-389_FF74Y.pdb_ex193_en119_LHD289_DHR52_BA_A_0006_0002.pdb_ex489_en15_FF74Y.pdb_ex489_en15_AAAA
+ 1856 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD289_DHR82_BA_A_0001_0015.pdb
+resplicing cyclic chains
+mbb000001 0062 score0sym fail 229.36610486574583 rms -1 grade AFAA
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD289_DHR82_BA_A_0001_0012.pdb
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '53', '0']
+solution ./worms_mbb0001__0063_182-394_FF74Y.pdb_ex227_en132_LHD289_DHR82_BA_A_0001_0012.pdb_ex508_en15_FF74Y.pdb_ex508_en15_AAAA
+ 1850 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR21_BA_A_0003_0006.pdb
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '4', '0']
+solution ./worms_mbb0001__0064_193-369_FF74Y.pdb_ex219_en10_LHD289_DHR21_BA_A_0003_0006.pdb_ex430_en43_FF74Y.pdb_ex430_en43_ABAA
+ 1854 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '6', '0']
+solution ./worms_mbb0001__0065_192-402_FF74Y.pdb_ex228_en27_LHD289_DHR39_BA_A_0003_0009.pdb_ex438_en18_FF74Y.pdb_ex438_en18_AAAA
+ 1857 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '49', '0']
+solution ./worms_mbb0001__0066_161-342_FF74Y.pdb_ex196_en144_LHD289_DHR53_BA_A_0001_0008.pdb_ex418_en15_FF74Y.pdb_ex418_en15_ABAB
+ 1857 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '41', '0']
+solution ./worms_mbb0001__0067_194-352_FF74Y.pdb_ex202_en8_LHD289_DHR21_BA_A_0014_0008.pdb_ex454_en44_FF74Y.pdb_ex454_en44_AAAA
+ 1850 MEM dump pdb after
+resplicing cyclic chains
+mbb000001 0068 score0sym fail 5.857184789776101 rms -1 grade AAAA
+resplicing cyclic chains
+mbb0001 000069 score0 fail 1 69 score0 157.9452400011594 rms -1 grade AAAB
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '29', '0']
+solution ./worms_mbb0001__0070_212-397_FF74Y.pdb_ex228_en5_LHD289_DHR59_BA_A_0009_0001.pdb_ex502_en43_FF74Y.pdb_ex502_en43_AAAA
+ 1866 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '33', '0']
+solution ./worms_mbb0001__0071_192-351_FF74Y.pdb_ex201_en120_LHD289_DHR53_BA_A_0010_0001.pdb_ex439_en42_FF74Y.pdb_ex439_en42_ABAA
+ 1866 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '25', '0']
+solution ./worms_mbb0001__0072_121-288_FF74Y.pdb_ex192_en124_LHD289_DHR82_BA_A_0001_0015.pdb_ex427_en25_FF74Y.pdb_ex427_en25_AFAA
+ 1866 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '51', '0']
+solution ./worms_mbb0001__0073_189-358_FF74Y.pdb_ex184_en107_LHD289_DHR21_BA_A_0002_0002.pdb_ex438_en15_FF74Y.pdb_ex438_en15_AFAA
+ 1866 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '59', '0']
+solution ./worms_mbb0001__0074_150-315_FF74Y.pdb_ex201_en10_LHD278_DHR52_BA_A_0001_0005.pdb_ex412_en36_FF74Y.pdb_ex412_en36_AAAA
+ 1872 MEM dump pdb after
+resplicing cyclic chains
+mbb0001 000075 score0 fail 1 75 score0 201.6742203214049 rms -1 grade AFAB
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '10', '0']
+solution ./worms_mbb0001__0076_166-377_FF74Y.pdb_ex224_en107_LHD289_DHR09_BA_A_0006_0004.pdb_ex471_en13_FF74Y.pdb_ex471_en13_AAAA
+ 1874 MEM dump pdb after
+resplicing cyclic chains
+mbb0001 000077 score0 fail 1 77 score0 1.3750928562226545 rms -1 grade AAAA
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR59_BA_A_0001_0017.pdb
+resplicing cyclic chains
+mbb0001 000078 score0 fail 1 78 score0 1.3556383370622562 rms -1 grade ABAA
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR59_BA_A_0001_0003.pdb
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '5', '0']
+solution ./worms_mbb0001__0079_190-333_FF74Y.pdb_ex183_en100_LHD289_DHR59_BA_A_0001_0003.pdb_ex464_en40_FF74Y.pdb_ex464_en40_AAAA
+ 1871 MEM dump pdb after
+resplicing cyclic chains
+mbb0001 000080 score0 fail 1 80 score0 1.1551835067423364 rms -1 grade ABAA
+resplicing cyclic chains
+mbb0001 000081 score0 fail 1 81 score0 213.26111699769865 rms -1 grade ABAB
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD289_DHR46_BA_A_0003_0002.pdb
+resplicing cyclic chains
+mbb0001 000082 score0 fail 1 82 score0 66.66307473487218 rms -1 grade AFAB
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '10', '0']
+solution ./worms_mbb0001__0083_186-395_FF74Y.pdb_ex218_en33_LHD289_DHR09_BA_A_0006_0004.pdb_ex491_en9_FF74Y.pdb_ex491_en9_AAAA
+ 1874 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD278_DHR09_BA_A_0009.pdb
+resplicing cyclic chains
+mbb0001 000084 score0 fail 1 84 score0 17.144176669385768 rms -1 grade ABAA
+resplicing cyclic chains
+mbb0001 000085 score0 fail 1 85 score0 10.106858060530051 rms -1 grade AAAA
+resplicing cyclic chains
+mbb0001 000086 score0 fail 1 86 score0 1.8926134310183045 rms -1 grade ABAA
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR57_BA_A_0001_0006.pdb
+resplicing cyclic chains
+mbb0001 000087 score0 fail 1 87 score0 71.13634631222087 rms -1 grade AAAA
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '7', '0']
+solution ./worms_mbb0001__0088_167-339_FF74Y.pdb_ex193_en138_LHD289_DHR53_BA_A_0004_0004.pdb_ex421_en21_FF74Y.pdb_ex421_en21_ABAB
+ 1875 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '52', '0']
+solution ./worms_mbb0001__0089_90-260_FF74Y.pdb_ex218_en79_LHD317_DHR82_BA_A_0001_0009.pdb_ex427_en48_FF74Y.pdb_ex427_en48_AFAA
+ 1883 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '43', '0']
+solution ./worms_mbb0001__0090_192-338_FF74Y.pdb_ex195_en9_LHD289_DHR59_BA_A_0001_0017.pdb_ex489_en49_FF74Y.pdb_ex489_en49_ABAA
+ 1899 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '59', '0']
+solution ./worms_mbb0001__0091_204-423_FF74Y.pdb_ex227_en76_LHD278_DHR52_BA_A_0001_0005.pdb_ex466_en8_FF74Y.pdb_ex466_en8_AAAA
+ 1872 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '59', '0']
+solution ./worms_mbb0001__0092_165-352_FF74Y.pdb_ex199_en101_LHD278_DHR52_BA_A_0001_0005.pdb_ex427_en12_FF74Y.pdb_ex427_en12_AAAA
+ 1882 MEM dump pdb after
+resplicing cyclic chains
+mbb000001 0093 score0sym fail 10.668046072457175 rms -1 grade ABAA
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '26', '0']
+solution ./worms_mbb0001__0094_117-260_FF74Y.pdb_ex193_en104_LHD317_DHR59_BA_A_0003_0003.pdb_ex392_en50_FF74Y.pdb_ex392_en50_AFAB
+ 1882 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '43', '0']
+solution ./worms_mbb0001__0095_192-337_FF74Y.pdb_ex194_en8_LHD289_DHR59_BA_A_0001_0017.pdb_ex489_en49_FF74Y.pdb_ex489_en49_ABAA
+ 1876 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '41', '0']
+solution ./worms_mbb0001__0096_187-364_FF74Y.pdb_ex183_en30_LHD289_DHR21_BA_A_0014_0008.pdb_ex447_en6_FF74Y.pdb_ex447_en6_ABAA
+ 1894 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD317_DHR82_BA_A_0001_0011.pdb
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '15', '0']
+solution ./worms_mbb0001__0097_98-263_FF74Y.pdb_ex214_en129_LHD317_DHR82_BA_A_0001_0011.pdb_ex428_en49_FF74Y.pdb_ex428_en49_ABAA
+ 1881 MEM dump pdb after
+resplicing cyclic chains
+mbb0001 000098 score0 fail 1 98 score0 16.09676132737989 rms -1 grade ABAA
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '59', '0']
+solution ./worms_mbb0001__0099_78-253_FF74Y.pdb_ex193_en138_LHD278_DHR52_BA_A_0001_0005.pdb_ex340_en18_FF74Y.pdb_ex340_en18_ABBB
+ 1881 MEM dump pdb after
+clear db 1881.14453125 1881.14453125 0.0
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '2', '0']
+solution ./worms_mbb0001__0100_170-340_FF74Y.pdb_ex187_en139_LHD289_DHR53_BA_A_0009.pdb_ex424_en17_FF74Y.pdb_ex424_en17_ABAB
+ 1881 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '55', '0']
+solution ./worms_mbb0001__0101_146-325_FF74Y.pdb_ex187_en40_LHD289_DHR79_BA_A_0003_0004.pdb_ex477_en8_FF74Y.pdb_ex477_en8_AAAA
+ 1876 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '62', '0']
+solution ./worms_mbb0001__0102_205-390_FF74Y.pdb_ex221_en13_LHD289_DHR82_BA_A_0003_0004.pdb_ex531_en36_FF74Y.pdb_ex531_en36_AAAA
+ 1889 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '54', '0']
+solution ./worms_mbb0001__0103_81-287_FF74Y.pdb_ex227_en13_LHD289_DHR52_BA_A_0006_0002.pdb_ex359_en21_FF74Y.pdb_ex359_en21_ABAA
+ 1891 MEM dump pdb after
+resplicing cyclic chains
+mbb0001 000104 score0 fail 1 104 score0 41.267726891652075 rms -1 grade ABAA
+resplicing cyclic chains
+mbb0001 000105 score0 fail 1 105 score0 1.051587492490899 rms -1 grade AAAA
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '52', '0']
+solution ./worms_mbb0001__0106_97-277_FF74Y.pdb_ex214_en136_LHD317_DHR82_BA_A_0001_0009.pdb_ex434_en34_FF74Y.pdb_ex434_en34_ABAA
+ 1891 MEM dump pdb after
+resplicing cyclic chains
+mbb000001 0107 score0sym fail 176.120481101848 rms -1 grade AAAA
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '42', '0']
+solution ./worms_mbb0001__0108_84-251_FF74Y.pdb_ex184_en93_LHD289_DHR62_BA_A_0001_0007.pdb_ex342_en17_FF74Y.pdb_ex342_en17_ABAA
+ 1891 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '5', '0']
+solution ./worms_mbb0001__0109_189-395_FF74Y.pdb_ex228_en101_LHD289_DHR59_BA_A_0001_0003.pdb_ex463_en22_FF74Y.pdb_ex463_en22_ABAA
+ 1895 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '39', '0']
+solution ./worms_mbb0001__0110_145-302_FF74Y.pdb_ex195_en89_LHD289_DHR76_BA_A_0001_0020.pdb_ex426_en38_FF74Y.pdb_ex426_en38_AAAA
+ 1884 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD278_DHR54_BA_A_0005_0002.pdb
+resplicing cyclic chains
+mbb0001 000111 score0 fail 1 111 score0 211.5874128548051 rms -1 grade ABAA
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '14', '0']
+solution ./worms_mbb0001__0112_121-300_FF74Y.pdb_ex197_en142_LHD289_DHR53_BA_A_0001_0017.pdb_ex375_en18_FF74Y.pdb_ex375_en18_ABAB
+ 1885 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '10', '0']
+solution ./worms_mbb0001__0113_211-427_FF74Y.pdb_ex224_en118_LHD289_DHR09_BA_A_0006_0004.pdb_ex516_en8_FF74Y.pdb_ex516_en8_AAAA
+ 1905 MEM dump pdb after
+resplicing cyclic chains
+mbb0001 000114 score0 fail 1 114 score0 1.0846161568839179 rms -1 grade ABAA
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '1', '0']
+solution ./worms_mbb0001__0115_183-327_FF74Y.pdb_ex184_en6_LHD289_DHR57_BA_A_0001_0006.pdb_ex473_en40_FF74Y.pdb_ex473_en40_ABAA
+ 1880 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD289_DHR59_BA_A_0001_0003.pdb
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '32', '0']
+solution ./worms_mbb0001__0116_213-395_FF74Y.pdb_ex192_en6_LHD289_DHR59_BA_A_0001_0003.pdb_ex487_en10_FF74Y.pdb_ex487_en10_AAAA
+ 1892 MEM dump pdb after
+resplicing cyclic chains
+mbb0001 000117 score0 fail 1 117 score0 1.0486430365480073 rms -1 grade AAAA
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '54', '0']
+solution ./worms_mbb0001__0118_80-282_FF74Y.pdb_ex222_en8_LHD289_DHR52_BA_A_0006_0002.pdb_ex358_en20_FF74Y.pdb_ex358_en20_ABAA
+ 1898 MEM dump pdb after
+resplicing cyclic chains
+mbb0001 000119 score0 fail 1 119 score0 1.4167952273468742 rms -1 grade AAAA
+resplicing cyclic chains
+mbb0001 000120 score0 fail 1 120 score0 3.515688412685506 rms -1 grade AFAA
+resplicing cyclic chains
+mbb0001 000121 score0 fail 1 121 score0 1.4400992546179403 rms -1 grade AAAA
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '54', '0']
+solution ./worms_mbb0001__0122_80-281_FF74Y.pdb_ex221_en50_LHD289_DHR52_BA_A_0006_0002.pdb_ex358_en20_FF74Y.pdb_ex358_en20_ABAA
+ 1894 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '54', '0']
+solution ./worms_mbb0001__0123_83-286_FF74Y.pdb_ex226_en98_LHD289_DHR52_BA_A_0006_0002.pdb_ex361_en23_FF74Y.pdb_ex361_en23_ABAA
+ 1888 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '62', '0']
+solution ./worms_mbb0001__0124_187-388_FF74Y.pdb_ex221_en24_LHD289_DHR82_BA_A_0003_0004.pdb_ex513_en20_FF74Y.pdb_ex513_en20_ABAA
+ 1893 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '39', '0']
+solution ./worms_mbb0001__0125_207-343_FF74Y.pdb_ex181_en20_LHD289_DHR76_BA_A_0001_0020.pdb_ex488_en45_FF74Y.pdb_ex488_en45_AFAA
+ 1907 MEM dump pdb after
+resplicing cyclic chains
+mbb0001 000126 score0 fail 1 126 score0 4.31897937853589 rms -1 grade AFAB
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '51', '0']
+solution ./worms_mbb0001__0127_189-363_FF74Y.pdb_ex182_en105_LHD289_DHR21_BA_A_0002_0002.pdb_ex438_en8_FF74Y.pdb_ex438_en8_AFAA
+ 1893 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '54', '0']
+solution ./worms_mbb0001__0128_81-302_FF74Y.pdb_ex227_en52_LHD289_DHR52_BA_A_0006_0002.pdb_ex359_en6_FF74Y.pdb_ex359_en6_ABAA
+ 1896 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '59', '0']
+solution ./worms_mbb0001__0129_204-422_FF74Y.pdb_ex226_en75_LHD278_DHR52_BA_A_0001_0005.pdb_ex466_en8_FF74Y.pdb_ex466_en8_AAAA
+ 1907 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '39', '0']
+solution ./worms_mbb0001__0130_107-289_FF74Y.pdb_ex218_en16_LHD289_DHR76_BA_A_0001_0020.pdb_ex388_en36_FF74Y.pdb_ex388_en36_AAAA
+ 1901 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '51', '0']
+solution ./worms_mbb0001__0131_186-365_FF74Y.pdb_ex184_en107_LHD289_DHR21_BA_A_0002_0002.pdb_ex435_en5_FF74Y.pdb_ex435_en5_AFAA
+ 1894 MEM dump pdb after
+resplicing cyclic chains
+mbb000001 0132 score0sym fail 3.7261842321763825 rms -1 grade ABAA
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '6', '0']
+solution ./worms_mbb0001__0133_211-382_FF74Y.pdb_ex220_en29_LHD289_DHR39_BA_A_0003_0009.pdb_ex457_en49_FF74Y.pdb_ex457_en49_ABAA
+ 1884 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR21_BA_A_0014_0001.pdb
+resplicing cyclic chains
+mbb0001 000134 score0 fail 1 134 score0 161.10540122292525 rms -1 grade ABAB
+resplicing cyclic chains
+mbb0001 000135 score0 fail 1 135 score0 1.6605537020044343 rms -1 grade ABAA
+resplicing cyclic chains
+mbb0001 000136 score0 fail 1 136 score0 181.7219014497954 rms -1 grade ABAB
+resplicing cyclic chains
+mbb0001 000137 score0 fail 1 137 score0 71.31405689615828 rms -1 grade AFAA
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '54', '0']
+solution ./worms_mbb0001__0138_123-299_FF74Y.pdb_ex189_en36_LHD289_DHR52_BA_A_0006_0002.pdb_ex401_en13_FF74Y.pdb_ex401_en13_ABAA
+ 1899 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '54', '0']
+solution ./worms_mbb0001__0139_209-409_FF74Y.pdb_ex213_en56_LHD289_DHR52_BA_A_0006_0002.pdb_ex487_en13_FF74Y.pdb_ex487_en13_ABAA
+ 1890 MEM dump pdb after
+resplicing cyclic chains
+mbb0001 000140 score0 fail 1 140 score0 71.03104101843469 rms -1 grade AAAB
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '45', '0']
+solution ./worms_mbb0001__0141_206-376_FF74Y.pdb_ex187_en92_LHD289_DHR53_BA_A_0005_0013.pdb_ex463_en17_FF74Y.pdb_ex463_en17_ABAA
+ 1900 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '50', '0']
+solution ./worms_mbb0001__0142_189-364_FF74Y.pdb_ex214_en5_LHD289_DHR21_BA_A_0014_0001.pdb_ex426_en39_FF74Y.pdb_ex426_en39_AAAA
+ 1887 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR21_BA_A_0014_0008.pdb
+resplicing cyclic chains
+mbb0001 000143 score0 fail 1 143 score0 27.126027315743656 rms -1 grade AAAA
+resplicing cyclic chains
+mbb0001 000144 score0 fail 1 144 score0 9.200374247801019 rms -1 grade AFAA
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '54', '0']
+solution ./worms_mbb0001__0145_82-285_FF74Y.pdb_ex225_en97_LHD289_DHR52_BA_A_0006_0002.pdb_ex360_en22_FF74Y.pdb_ex360_en22_ABAA
+ 1894 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '42', '0']
+solution ./worms_mbb0001__0146_124-328_FF74Y.pdb_ex225_en124_LHD289_DHR62_BA_A_0001_0007.pdb_ex382_en21_FF74Y.pdb_ex382_en21_ABAA
+ 1894 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '54', '0']
+solution ./worms_mbb0001__0147_80-283_FF74Y.pdb_ex223_en95_LHD289_DHR52_BA_A_0006_0002.pdb_ex358_en20_FF74Y.pdb_ex358_en20_ABAA
+ 1894 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '49', '0']
+solution ./worms_mbb0001__0148_208-391_FF74Y.pdb_ex195_en143_LHD289_DHR53_BA_A_0001_0008.pdb_ex465_en12_FF74Y.pdb_ex465_en12_ABAB
+ 1899 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '45', '0']
+solution ./worms_mbb0001__0149_122-303_FF74Y.pdb_ex200_en148_LHD289_DHR53_BA_A_0005_0013.pdb_ex379_en19_FF74Y.pdb_ex379_en19_ABAB
+ 1887 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '51', '0']
+solution ./worms_mbb0001__0150_165-369_FF74Y.pdb_ex223_en27_LHD289_DHR21_BA_A_0002_0002.pdb_ex414_en19_FF74Y.pdb_ex414_en19_ABAA
+ 1888 MEM dump pdb after
+resplicing cyclic chains
+mbb000001 0151 score0sym fail 59.752605248251555 rms -1 grade AAAA
+resplicing cyclic chains
+mbb0001 000152 score0 fail 1 152 score0 1.439962355541102 rms -1 grade ABAA
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '39', '0']
+solution ./worms_mbb0001__0153_212-344_FF74Y.pdb_ex182_en76_LHD289_DHR76_BA_A_0001_0020.pdb_ex493_en50_FF74Y.pdb_ex493_en50_AFAA
+ 1904 MEM dump pdb after
+resplicing cyclic chains
+mbb0001 000154 score0 fail 1 154 score0 1.0814520337206242 rms -1 grade ABAA
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '60', '0']
+solution ./worms_mbb0001__0155_189-371_FF74Y.pdb_ex221_en35_LHD278_DHR59_BA_A_0003_0014.pdb_ex490_en39_FF74Y.pdb_ex490_en39_AAAA
+ 1896 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '41', '0']
+solution ./worms_mbb0001__0156_194-365_FF74Y.pdb_ex184_en31_LHD289_DHR21_BA_A_0014_0008.pdb_ex454_en13_FF74Y.pdb_ex454_en13_ABAA
+ 1886 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD317_DHR54_BA_A_0003_0005.pdb
+resplicing cyclic chains
+mbb000001 0157 score0sym fail 12.322287446322791 rms -1 grade ABAB
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '35', '0']
+solution ./worms_mbb0001__0158_185-360_FF74Y.pdb_ex193_en55_LHD289_DHR59_BA_A_0001_0019.pdb_ex449_en18_FF74Y.pdb_ex449_en18_AAAA
+ 1913 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '29', '0']
+solution ./worms_mbb0001__0159_187-363_FF74Y.pdb_ex196_en139_LHD289_DHR59_BA_A_0009_0001.pdb_ex477_en20_FF74Y.pdb_ex477_en20_ABAA
+ 1904 MEM dump pdb after
+resplicing cyclic chains
+mbb0001 000160 score0 fail 1 160 score0 14.574866839347877 rms -1 grade ABAB
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '39', '0']
+solution ./worms_mbb0001__0161_192-370_FF74Y.pdb_ex220_en15_LHD289_DHR76_BA_A_0001_0020.pdb_ex473_en42_FF74Y.pdb_ex473_en42_AAAA
+ 1900 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '54', '0']
+solution ./worms_mbb0001__0162_118-295_FF74Y.pdb_ex192_en118_LHD289_DHR52_BA_A_0006_0002.pdb_ex396_en15_FF74Y.pdb_ex396_en15_ABAA
+ 1900 MEM dump pdb after
+resplicing cyclic chains
+mbb000001 0163 score0sym fail 30.524208071052165 rms -1 grade ABAA
+resplicing cyclic chains
+mbb000001 0164 score0sym fail 5.965420571147462 rms -1 grade AAAA
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '58', '0']
+solution ./worms_mbb0001__0165_181-340_FF74Y.pdb_ex197_en59_LHD289_DHR59_BA_A_0003_0007.pdb_ex471_en38_FF74Y.pdb_ex471_en38_ABAA
+ 1890 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '39', '0']
+solution ./worms_mbb0001__0166_213-352_FF74Y.pdb_ex183_en77_LHD289_DHR76_BA_A_0001_0020.pdb_ex494_en44_FF74Y.pdb_ex494_en44_AFAA
+ 1909 MEM dump pdb after
+resplicing cyclic chains
+mbb0001 000167 score0 fail 1 167 score0 2.683699567941327 rms -1 grade ABAA
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '6', '0']
+solution ./worms_mbb0001__0168_213-352_FF74Y.pdb_ex190_en46_LHD289_DHR39_BA_A_0003_0009.pdb_ex459_en51_FF74Y.pdb_ex459_en51_ABAA
+ 1908 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '6', '0']
+solution ./worms_mbb0001__0169_205-387_FF74Y.pdb_ex225_en34_LHD289_DHR39_BA_A_0003_0009.pdb_ex451_en43_FF74Y.pdb_ex451_en43_AAAA
+ 1894 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '21', '0']
+solution ./worms_mbb0001__0170_210-398_FF74Y.pdb_ex222_en44_LHD278_DHR09_BA_A_0006_0004.pdb_ex512_en34_FF74Y.pdb_ex512_en34_AAAA
+ 1902 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '54', '0']
+solution ./worms_mbb0001__0171_167-344_FF74Y.pdb_ex191_en74_LHD289_DHR52_BA_A_0006_0002.pdb_ex445_en14_FF74Y.pdb_ex445_en14_AAAA
+ 1908 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '35', '0']
+solution ./worms_mbb0001__0172_150-314_FF74Y.pdb_ex183_en52_LHD289_DHR59_BA_A_0001_0019.pdb_ex414_en19_FF74Y.pdb_ex414_en19_ABAA
+ 1905 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '5', '0']
+solution ./worms_mbb0001__0173_165-347_FF74Y.pdb_ex228_en27_LHD289_DHR59_BA_A_0001_0003.pdb_ex439_en46_FF74Y.pdb_ex439_en46_ABAA
+ 1891 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '59', '0']
+solution ./worms_mbb0001__0174_181-364_FF74Y.pdb_ex190_en37_LHD278_DHR52_BA_A_0001_0005.pdb_ex443_en7_FF74Y.pdb_ex443_en7_ABAA
+ 1914 MEM dump pdb after
+resplicing cyclic chains
+mbb0001 000175 score0 fail 1 175 score0 1.1483682082092017 rms -1 grade ABAA
+resplicing cyclic chains
+mbb0001 000176 score0 fail 1 176 score0 163.27050794332973 rms -1 grade ABAB
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD278_DHR59_BA_A_0003_0014.pdb
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '8', '0']
+solution ./worms_mbb0001__0177_191-335_FF74Y.pdb_ex185_en6_LHD278_DHR59_BA_A_0003_0014.pdb_ex492_en41_FF74Y.pdb_ex492_en41_AAAA
+ 1925 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '3', '0']
+solution ./worms_mbb0001__0178_167-344_FF74Y.pdb_ex198_en132_LHD289_DHR46_BA_A_0003_0002.pdb_ex410_en21_FF74Y.pdb_ex410_en21_ABAB
+ 1902 MEM dump pdb after
+resplicing cyclic chains
+mbb0001 000179 score0 fail 1 179 score0 179.0479548373729 rms -1 grade AFAB
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '45', '0']
+solution ./worms_mbb0001__0180_203-375_FF74Y.pdb_ex186_en91_LHD289_DHR53_BA_A_0005_0013.pdb_ex460_en14_FF74Y.pdb_ex460_en14_ABAA
+ 1911 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '6', '0']
+solution ./worms_mbb0001__0181_206-359_FF74Y.pdb_ex197_en53_LHD289_DHR39_BA_A_0003_0009.pdb_ex452_en44_FF74Y.pdb_ex452_en44_ABAA
+ 1912 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD278_DHR54_BA_A_0001_0002.pdb
+resplicing cyclic chains
+mbb0001 000182 score0 fail 1 182 score0 190.74523753769222 rms -1 grade AAAA
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '62', '0']
+solution ./worms_mbb0001__0183_207-381_FF74Y.pdb_ex219_en62_LHD289_DHR82_BA_A_0003_0004.pdb_ex533_en45_FF74Y.pdb_ex533_en45_ABAA
+ 1907 MEM dump pdb after
+resplicing cyclic chains
+mbb0001 000184 score0 fail 1 184 score0 44.33670137983924 rms -1 grade ABAA
+resplicing cyclic chains
+mbb0001 000185 score0 fail 1 185 score0 145.05988195774597 rms -1 grade ABAB
+resplicing cyclic chains
+mbb0001 000186 score0 fail 1 186 score0 1.233479236010144 rms -1 grade ABAB
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '35', '0']
+solution ./worms_mbb0001__0187_148-322_FF74Y.pdb_ex191_en16_LHD289_DHR59_BA_A_0001_0019.pdb_ex412_en17_FF74Y.pdb_ex412_en17_ABAA
+ 1897 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '54', '0']
+solution ./worms_mbb0001__0188_168-358_FF74Y.pdb_ex212_en55_LHD289_DHR52_BA_A_0006_0002.pdb_ex446_en22_FF74Y.pdb_ex446_en22_ABAA
+ 1921 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '62', '0']
+solution ./worms_mbb0001__0189_184-394_FF74Y.pdb_ex227_en132_LHD289_DHR82_BA_A_0003_0004.pdb_ex510_en17_FF74Y.pdb_ex510_en17_AAAA
+ 1923 MEM dump pdb after
+resplicing cyclic chains
+mbb0001 000190 score0 fail 1 190 score0 9.656116566828524 rms -1 grade ABAA
+resplicing cyclic chains
+mbb0001 000191 score0 fail 1 191 score0 68.23835562505388 rms -1 grade AFAB
+resplicing cyclic chains
+mbb0001 000192 score0 fail 1 192 score0 86.14058920148217 rms -1 grade AFAB
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '51', '0']
+solution ./worms_mbb0001__0193_188-369_FF74Y.pdb_ex219_en68_LHD289_DHR21_BA_A_0002_0002.pdb_ex437_en38_FF74Y.pdb_ex437_en38_ABAA
+ 1916 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '58', '0']
+solution ./worms_mbb0001__0194_150-320_FF74Y.pdb_ex189_en139_LHD289_DHR59_BA_A_0003_0007.pdb_ex440_en19_FF74Y.pdb_ex440_en19_ABAA
+ 1907 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '30', '0']
+solution ./worms_mbb0001__0195_185-395_FF74Y.pdb_ex218_en8_LHD278_DHR09_BA_A_0009.pdb_ex462_en8_FF74Y.pdb_ex462_en8_AAAA
+ 1912 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '3', '0']
+solution ./worms_mbb0001__0196_124-296_FF74Y.pdb_ex186_en123_LHD289_DHR46_BA_A_0003_0002.pdb_ex367_en14_FF74Y.pdb_ex367_en14_AFBB
+ 1900 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD321_DHR62_BA_A_0012_0002.pdb
+resplicing cyclic chains
+mbb0001 000197 score0 fail 1 197 score0 137.27733919428147 rms -1 grade ABAB
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '37', '0']
+solution ./worms_mbb0001__0198_190-355_FF74Y.pdb_ex181_en28_LHD289_DHR21_BA_A_0014_0008.pdb_ex450_en16_FF74Y.pdb_ex450_en16_ABAA
+ 1904 MEM dump pdb after
+resplicing cyclic chains
+mbb0001 000199 score0 fail 1 199 score0 2.690037388112359 rms -1 grade ABAB
+clear db 1904.703125 1904.703125 0.0
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '5', '0']
+solution ./worms_mbb0001__0200_165-353_FF74Y.pdb_ex200_en14_LHD289_DHR59_BA_A_0001_0003.pdb_ex439_en12_FF74Y.pdb_ex439_en12_AAAA
+ 1905 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '51', '0']
+solution ./worms_mbb0001__0201_189-403_FF74Y.pdb_ex222_en13_LHD289_DHR21_BA_A_0002_0002.pdb_ex438_en8_FF74Y.pdb_ex438_en8_AAAA
+ 1910 MEM dump pdb after
+resplicing cyclic chains
+mbb0001 000202 score0 fail 1 202 score0 1.9625685772535073 rms -1 grade AAAA
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR54_BA_A_0003_0015.pdb
+resplicing cyclic chains
+mbb0001 000203 score0 fail 1 203 score0 8.237294794160846 rms -1 grade AAAA
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '54', '0']
+solution ./worms_mbb0001__0204_121-299_FF74Y.pdb_ex196_en122_LHD289_DHR52_BA_A_0006_0002.pdb_ex399_en18_FF74Y.pdb_ex399_en18_ABAA
+ 1912 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '39', '0']
+solution ./worms_mbb0001__0205_151-302_FF74Y.pdb_ex195_en89_LHD289_DHR76_BA_A_0001_0020.pdb_ex432_en44_FF74Y.pdb_ex432_en44_AAAA
+ 1917 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '8', '0']
+solution ./worms_mbb0001__0206_191-366_FF74Y.pdb_ex216_en30_LHD278_DHR59_BA_A_0003_0014.pdb_ex492_en41_FF74Y.pdb_ex492_en41_AAAA
+ 1914 MEM dump pdb after
+resplicing cyclic chains
+mbb0001 000207 score0 fail 1 207 score0 62.81599846102498 rms -1 grade AAAB
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '53', '0']
+solution ./worms_mbb0001__0208_181-393_FF74Y.pdb_ex226_en131_LHD289_DHR82_BA_A_0001_0012.pdb_ex507_en14_FF74Y.pdb_ex507_en14_AAAA
+ 1930 MEM dump pdb after
+resplicing cyclic chains
+mbb0001 000209 score0 fail 1 209 score0 1.2787689642933655 rms -1 grade AAAA
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '30', '0']
+solution ./worms_mbb0001__0210_75-271_FF74Y.pdb_ex211_en94_LHD278_DHR09_BA_A_0009.pdb_ex352_en15_FF74Y.pdb_ex352_en15_AFAA
+ 1912 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '62', '0']
+solution ./worms_mbb0001__0211_210-404_FF74Y.pdb_ex228_en20_LHD289_DHR82_BA_A_0003_0004.pdb_ex536_en34_FF74Y.pdb_ex536_en34_AAAA
+ 1921 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '54', '0']
+solution ./worms_mbb0001__0212_80-281_FF74Y.pdb_ex221_en7_LHD289_DHR52_BA_A_0006_0002.pdb_ex358_en20_FF74Y.pdb_ex358_en20_ABAA
+ 1923 MEM dump pdb after
+resplicing cyclic chains
+mbb0001 000213 score0 fail 1 213 score0 1.4118239913568742 rms -1 grade AAAA
+resplicing cyclic chains
+mbb0001 000214 score0 fail 1 214 score0 1.5733135167862002 rms -1 grade ABAA
+resplicing cyclic chains
+mbb0001 000215 score0 fail 1 215 score0 2.090008726122922 rms -1 grade AFAA
+resplicing cyclic chains
+mbb0001 000216 score0 fail 1 216 score0 35.179385760600105 rms -1 grade ABAA
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '51', '0']
+solution ./worms_mbb0001__0217_192-400_FF74Y.pdb_ex219_en10_LHD289_DHR21_BA_A_0002_0002.pdb_ex441_en11_FF74Y.pdb_ex441_en11_AAAA
+ 1938 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '27', '0']
+solution ./worms_mbb0001__0218_198-360_FF74Y.pdb_ex200_en23_LHD317_DHR80_BA_A_0002_0003.pdb_ex499_en38_FF74Y.pdb_ex499_en38_ABAA
+ 1938 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '49', '0']
+solution ./worms_mbb0001__0219_167-342_FF74Y.pdb_ex196_en144_LHD289_DHR53_BA_A_0001_0008.pdb_ex424_en21_FF74Y.pdb_ex424_en21_ABAB
+ 1911 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '50', '0']
+solution ./worms_mbb0001__0220_202-397_FF74Y.pdb_ex228_en31_LHD289_DHR21_BA_A_0014_0001.pdb_ex439_en33_FF74Y.pdb_ex439_en33_AAAA
+ 1908 MEM dump pdb after
+resplicing cyclic chains
+Warning: junction residue not helix:  216
+mbb0001 000221 score0 fail 1 221 score0 1.4952079009031178 rms -1 grade AFBB
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '60', '0']
+solution ./worms_mbb0001__0222_194-377_FF74Y.pdb_ex227_en41_LHD278_DHR59_BA_A_0003_0014.pdb_ex495_en44_FF74Y.pdb_ex495_en44_AAAA
+ 1937 MEM dump pdb after
+resplicing cyclic chains
+mbb0001 000223 score0 fail 1 223 score0 1.2433065179391074 rms -1 grade ABAA
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '54', '0']
+solution ./worms_mbb0001__0224_80-283_FF74Y.pdb_ex223_en9_LHD289_DHR52_BA_A_0006_0002.pdb_ex358_en20_FF74Y.pdb_ex358_en20_ABAA
+ 1923 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '26', '0']
+solution ./worms_mbb0001__0225_91-275_FF74Y.pdb_ex219_en91_LHD317_DHR59_BA_A_0003_0003.pdb_ex366_en35_FF74Y.pdb_ex366_en35_AAAA
+ 1912 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '54', '0']
+solution ./worms_mbb0001__0226_206-412_FF74Y.pdb_ex216_en95_LHD289_DHR52_BA_A_0006_0002.pdb_ex484_en10_FF74Y.pdb_ex484_en10_ABAA
+ 1909 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '45', '0']
+solution ./worms_mbb0001__0227_120-300_FF74Y.pdb_ex197_en145_LHD289_DHR53_BA_A_0005_0013.pdb_ex377_en17_FF74Y.pdb_ex377_en17_ABAB
+ 1909 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '10', '0']
+solution ./worms_mbb0001__0228_191-362_FF74Y.pdb_ex188_en19_LHD289_DHR09_BA_A_0006_0004.pdb_ex496_en17_FF74Y.pdb_ex496_en17_AFAA
+ 1939 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD275_DHR62_BA_A_0001_0005.pdb
+resplicing cyclic chains
+mbb0001 000229 score0 fail 1 229 score0 153.23946268651622 rms -1 grade ABAA
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '62', '0']
+solution ./worms_mbb0001__0230_186-404_FF74Y.pdb_ex227_en12_LHD289_DHR82_BA_A_0003_0004.pdb_ex512_en9_FF74Y.pdb_ex512_en9_AAAA
+ 1924 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '42', '0']
+solution ./worms_mbb0001__0231_127-286_FF74Y.pdb_ex196_en31_LHD289_DHR62_BA_A_0001_0007.pdb_ex385_en37_FF74Y.pdb_ex385_en37_AAAA
+ 1922 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '6', '0']
+solution ./worms_mbb0001__0232_212-359_FF74Y.pdb_ex197_en53_LHD289_DHR39_BA_A_0003_0009.pdb_ex458_en50_FF74Y.pdb_ex458_en50_ABAA
+ 1927 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '10', '0']
+solution ./worms_mbb0001__0233_169-377_FF74Y.pdb_ex224_en107_LHD289_DHR09_BA_A_0006_0004.pdb_ex474_en16_FF74Y.pdb_ex474_en16_AAAA
+ 1910 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '60', '0']
+solution ./worms_mbb0001__0234_191-362_FF74Y.pdb_ex181_en83_LHD278_DHR59_BA_A_0003_0014.pdb_ex492_en10_FF74Y.pdb_ex492_en10_ABAA
+ 1910 MEM dump pdb after
+resplicing cyclic chains
+mbb000001 0235 score0sym fail 136.74352694284025 rms -1 grade AFBA
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '42', '0']
+solution ./worms_mbb0001__0236_205-400_FF74Y.pdb_ex218_en81_LHD289_DHR62_BA_A_0001_0007.pdb_ex463_en23_FF74Y.pdb_ex463_en23_AFAA
+ 1930 MEM dump pdb after
+resplicing cyclic chains
+mbb0001 000237 score0 fail 1 237 score0 3.6152271071139057 rms -1 grade AAAA
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '6', '0']
+solution ./worms_mbb0001__0238_208-352_FF74Y.pdb_ex190_en46_LHD289_DHR39_BA_A_0003_0009.pdb_ex454_en46_FF74Y.pdb_ex454_en46_ABAA
+ 1927 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '35', '0']
+solution ./worms_mbb0001__0239_121-298_FF74Y.pdb_ex195_en150_LHD289_DHR59_BA_A_0001_0019.pdb_ex385_en18_FF74Y.pdb_ex385_en18_ABAB
+ 1910 MEM dump pdb after
+resplicing cyclic chains
+mbb0001 000240 score0 fail 1 240 score0 29.124559808144895 rms -1 grade ABAA
+resplicing cyclic chains
+mbb0001 000241 score0 fail 1 241 score0 197.89331083866884 rms -1 grade AFAB
+resplicing cyclic chains
+mbb0001 000242 score0 fail 1 242 score0 2.8296389265735655 rms -1 grade AAAA
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD278_DHR52_BA_A_0001_0014.pdb
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '11', '0']
+solution ./worms_mbb0001__0243_127-309_FF74Y.pdb_ex199_en25_LHD278_DHR52_BA_A_0001_0014.pdb_ex406_en17_FF74Y.pdb_ex406_en17_AAAA
+ 1934 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '55', '0']
+solution ./worms_mbb0001__0244_188-370_FF74Y.pdb_ex220_en37_LHD289_DHR79_BA_A_0003_0004.pdb_ex519_en38_FF74Y.pdb_ex519_en38_AAAA
+ 1925 MEM dump pdb after
+resplicing cyclic chains
+mbb0001 000245 score0 fail 1 245 score0 84.79048901496516 rms -1 grade AAAA
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD321_DHR80_BA_A_0006_0002.pdb
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '31', '0']
+solution ./worms_mbb0001__0246_78-278_FF74Y.pdb_ex217_en130_LHD321_DHR80_BA_A_0006_0002.pdb_ex389_en17_FF74Y.pdb_ex389_en17_ABAA
+ 1926 MEM dump pdb after
+resplicing cyclic chains
+mbb000001 0247 score0sym fail 35.658224662976465 rms -1 grade ABAA
+resplicing cyclic chains
+mbb0001 000248 score0 fail 1 248 score0 1.0540288399896667 rms -1 grade AAAA
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '4', '0']
+solution ./worms_mbb0001__0249_189-393_FF74Y.pdb_ex226_en64_LHD289_DHR21_BA_A_0003_0006.pdb_ex426_en22_FF74Y.pdb_ex426_en22_ABAA
+ 1915 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '50', '0']
+solution ./worms_mbb0001__0250_189-366_FF74Y.pdb_ex216_en7_LHD289_DHR21_BA_A_0014_0001.pdb_ex426_en39_FF74Y.pdb_ex426_en39_AAAA
+ 1920 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '54', '0']
+solution ./worms_mbb0001__0251_170-351_FF74Y.pdb_ex198_en81_LHD289_DHR52_BA_A_0006_0002.pdb_ex448_en17_FF74Y.pdb_ex448_en17_AAAA
+ 1934 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '52', '0']
+solution ./worms_mbb0001__0252_165-362_FF74Y.pdb_ex214_en140_LHD317_DHR82_BA_A_0001_0009.pdb_ex502_en17_FF74Y.pdb_ex502_en17_ABAA
+ 1936 MEM dump pdb after
+resplicing cyclic chains
+mbb0001 000253 score0 fail 1 253 score0 1.0371779158434655 rms -1 grade AAAA
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '54', '0']
+solution ./worms_mbb0001__0254_81-288_FF74Y.pdb_ex228_en14_LHD289_DHR52_BA_A_0006_0002.pdb_ex359_en21_FF74Y.pdb_ex359_en21_ABAA
+ 1936 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '60', '0']
+solution ./worms_mbb0001__0255_189-377_FF74Y.pdb_ex227_en41_LHD278_DHR59_BA_A_0003_0014.pdb_ex490_en39_FF74Y.pdb_ex490_en39_AAAA
+ 1927 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '55', '0']
+solution ./worms_mbb0001__0256_147-324_FF74Y.pdb_ex217_en34_LHD289_DHR79_BA_A_0003_0004.pdb_ex478_en40_FF74Y.pdb_ex478_en40_AAAA
+ 1924 MEM dump pdb after
+resplicing cyclic chains
+mbb000001 0257 score0sym fail 6.185505260423686 rms -1 grade AAAA
+resplicing cyclic chains
+mbb0001 000258 score0 fail 1 258 score0 1.0685700911743163 rms -1 grade ABAA
+resplicing cyclic chains
+mbb0001 000259 score0 fail 1 259 score0 150.9878268532885 rms -1 grade ABAB
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '51', '0']
+solution ./worms_mbb0001__0260_192-366_FF74Y.pdb_ex192_en108_LHD289_DHR21_BA_A_0002_0002.pdb_ex441_en18_FF74Y.pdb_ex441_en18_ABAA
+ 1930 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '42', '0']
+solution ./worms_mbb0001__0261_123-277_FF74Y.pdb_ex194_en36_LHD289_DHR62_BA_A_0001_0007.pdb_ex381_en40_FF74Y.pdb_ex381_en40_AAAA
+ 1930 MEM dump pdb after
+resplicing cyclic chains
+mbb0001 000262 score0 fail 1 262 score0 1.075722517058164 rms -1 grade AAAA
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '6', '0']
+solution ./worms_mbb0001__0263_212-389_FF74Y.pdb_ex227_en36_LHD289_DHR39_BA_A_0003_0009.pdb_ex458_en50_FF74Y.pdb_ex458_en50_ABAA
+ 1919 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '52', '0']
+solution ./worms_mbb0001__0264_200-398_FF74Y.pdb_ex214_en78_LHD317_DHR82_BA_A_0001_0009.pdb_ex537_en16_FF74Y.pdb_ex537_en16_ABAA
+ 1925 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '51', '0']
+solution ./worms_mbb0001__0265_189-356_FF74Y.pdb_ex189_en105_LHD289_DHR21_BA_A_0002_0002.pdb_ex438_en22_FF74Y.pdb_ex438_en22_ABAA
+ 1929 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '51', '0']
+solution ./worms_mbb0001__0266_165-373_FF74Y.pdb_ex227_en31_LHD289_DHR21_BA_A_0002_0002.pdb_ex414_en19_FF74Y.pdb_ex414_en19_ABAA
+ 1920 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '42', '0']
+solution ./worms_mbb0001__0267_124-326_FF74Y.pdb_ex223_en122_LHD289_DHR62_BA_A_0001_0007.pdb_ex382_en21_FF74Y.pdb_ex382_en21_ABAA
+ 1924 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '62', '0']
+solution ./worms_mbb0001__0268_190-408_FF74Y.pdb_ex227_en12_LHD289_DHR82_BA_A_0003_0004.pdb_ex516_en9_FF74Y.pdb_ex516_en9_AAAA
+ 1926 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '48', '0']
+solution ./worms_mbb0001__0269_188-389_FF74Y.pdb_ex222_en18_LHD289_DHR82_BA_A_0005_0006.pdb_ex521_en21_FF74Y.pdb_ex521_en21_AAAA
+ 1932 MEM dump pdb after
+resplicing cyclic chains
+mbb0001 000270 score0 fail 1 270 score0 5.99343813865733 rms -1 grade ABAB
+resplicing cyclic chains
+mbb0001 000271 score0 fail 1 271 score0 8.879352045342188 rms -1 grade ABAA
+resplicing cyclic chains
+mbb0001 000272 score0 fail 1 272 score0 69.94892327763668 rms -1 grade AFAB
+resplicing cyclic chains
+mbb0001 000273 score0 fail 1 273 score0 1.4891459451518732 rms -1 grade AFAA
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '54', '0']
+solution ./worms_mbb0001__0274_123-316_FF74Y.pdb_ex213_en92_LHD289_DHR52_BA_A_0006_0002.pdb_ex401_en20_FF74Y.pdb_ex401_en20_ABAA
+ 1932 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '10', '0']
+solution ./worms_mbb0001__0275_120-330_FF74Y.pdb_ex227_en110_LHD289_DHR09_BA_A_0006_0004.pdb_ex425_en17_FF74Y.pdb_ex425_en17_ABBA
+ 1932 MEM dump pdb after
+resplicing cyclic chains
+mbb0001 000276 score0 fail 1 276 score0 1.366765471161112 rms -1 grade ABAA
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '62', '0']
+solution ./worms_mbb0001__0277_186-391_FF74Y.pdb_ex225_en68_LHD289_DHR82_BA_A_0003_0004.pdb_ex512_en20_FF74Y.pdb_ex512_en20_ABAA
+ 1925 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '55', '0']
+solution ./worms_mbb0001__0278_214-346_FF74Y.pdb_ex184_en38_LHD289_DHR79_BA_A_0003_0004.pdb_ex545_en52_FF74Y.pdb_ex545_en52_ABAA
+ 1949 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '39', '0']
+solution ./worms_mbb0001__0279_205-351_FF74Y.pdb_ex182_en76_LHD289_DHR76_BA_A_0001_0020.pdb_ex486_en36_FF74Y.pdb_ex486_en36_AFAA
+ 1935 MEM dump pdb after
+resplicing cyclic chains
+mbb0001 000280 score0 fail 1 280 score0 21.55361313553003 rms -1 grade ABAB
+resplicing cyclic chains
+mbb0001 000281 score0 fail 1 281 score0 1.1419706650094863 rms -1 grade ABAA
+resplicing cyclic chains
+mbb0001 000282 score0 fail 1 282 score0 8.310097575901425 rms -1 grade ABAB
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '39', '0']
+solution ./worms_mbb0001__0283_203-352_FF74Y.pdb_ex183_en77_LHD289_DHR76_BA_A_0001_0020.pdb_ex484_en34_FF74Y.pdb_ex484_en34_AFAA
+ 1935 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR82_BA_A_0003_0003.pdb
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '28', '0']
+solution ./worms_mbb0001__0284_206-395_FF74Y.pdb_ex213_en101_LHD289_DHR82_BA_A_0003_0003.pdb_ex512_en24_FF74Y.pdb_ex512_en24_AFAA
+ 1923 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD278_DHR09_BA_A_0006_0004.pdb
+resplicing cyclic chains
+mbb0001 000285 score0 fail 1 285 score0 69.07137252884937 rms -1 grade ABAB
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '42', '0']
+solution ./worms_mbb0001__0286_80-282_FF74Y.pdb_ex214_en27_LHD289_DHR62_BA_A_0001_0007.pdb_ex338_en12_FF74Y.pdb_ex338_en12_ABAA
+ 1938 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '53', '0']
+solution ./worms_mbb0001__0287_210-389_FF74Y.pdb_ex227_en121_LHD289_DHR82_BA_A_0001_0012.pdb_ex536_en48_FF74Y.pdb_ex536_en48_ABAA
+ 1928 MEM dump pdb after
+resplicing cyclic chains
+mbb0001 000288 score0 fail 1 288 score0 2.170745399655652 rms -1 grade AAAA
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '28', '0']
+solution ./worms_mbb0001__0289_80-295_FF74Y.pdb_ex227_en108_LHD289_DHR82_BA_A_0003_0003.pdb_ex386_en12_FF74Y.pdb_ex386_en12_ABAA
+ 1936 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD278_DHR54_BA_A_0003_0012.pdb
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '61', '0']
+solution ./worms_mbb0001__0290_80-290_FF74Y.pdb_ex215_en47_LHD278_DHR54_BA_A_0003_0012.pdb_ex369_en5_FF74Y.pdb_ex369_en5_ABAA
+ 1944 MEM dump pdb after
+resplicing cyclic chains
+mbb0001 000291 score0 fail 1 291 score0 2.9279318209692753 rms -1 grade ABAB
+resplicing cyclic chains
+mbb0001 000292 score0 fail 1 292 score0 3.7480162028580426 rms -1 grade ABAA
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '57', '0']
+solution ./worms_mbb0001__0293_99-266_FF74Y.pdb_ex216_en95_LHD317_DHR54_BA_A_0003_0005.pdb_ex381_en49_FF74Y.pdb_ex381_en49_ABAB
+ 1944 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '58', '0']
+solution ./worms_mbb0001__0294_188-367_FF74Y.pdb_ex217_en31_LHD289_DHR59_BA_A_0003_0007.pdb_ex478_en38_FF74Y.pdb_ex478_en38_AAAA
+ 1937 MEM dump pdb after
+resplicing cyclic chains
+mbb000001 0295 score0sym fail 34.16023580779714 rms -1 grade AFAA
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '21', '0']
+solution ./worms_mbb0001__0296_185-373_FF74Y.pdb_ex199_en5_LHD278_DHR09_BA_A_0006_0004.pdb_ex487_en11_FF74Y.pdb_ex487_en11_AABA
+ 1943 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD278_DHR46_BA_A_0003_0011.pdb
+resplicing cyclic chains
+mbb0001 000297 score0 fail 1 297 score0 33.33184272739725 rms -1 grade AAAA
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '42', '0']
+solution ./worms_mbb0001__0298_205-399_FF74Y.pdb_ex217_en80_LHD289_DHR62_BA_A_0001_0007.pdb_ex463_en23_FF74Y.pdb_ex463_en23_AFAA
+ 1952 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '60', '0']
+solution ./worms_mbb0001__0299_191-344_FF74Y.pdb_ex194_en8_LHD278_DHR59_BA_A_0003_0014.pdb_ex492_en41_FF74Y.pdb_ex492_en41_AAAA
+ 1963 MEM dump pdb after
+clear db 1963.7109375 1963.7109375 0.0
+resplicing cyclic chains
+mbb0001 000300 score0 fail 1 300 score0 36.71222037274695 rms -1 grade ABAA
+resplicing cyclic chains
+mbb0001 000301 score0 fail 1 301 score0 148.0654195843311 rms -1 grade ABAB
+resplicing cyclic chains
+mbb0001 000302 score0 fail 1 302 score0 93.57100681626116 rms -1 grade AFAA
+resplicing cyclic chains
+mbb0001 000303 score0 fail 1 303 score0 1.168399231673969 rms -1 grade ABAA
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '51', '0']
+solution ./worms_mbb0001__0304_143-288_FF74Y.pdb_ex181_en12_LHD289_DHR21_BA_A_0002_0002.pdb_ex392_en36_FF74Y.pdb_ex392_en36_ABAA
+ 1946 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '30', '0']
+solution ./worms_mbb0001__0305_190-399_FF74Y.pdb_ex218_en8_LHD278_DHR09_BA_A_0009.pdb_ex467_en9_FF74Y.pdb_ex467_en9_AAAA
+ 1942 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '42', '0']
+solution ./worms_mbb0001__0306_126-322_FF74Y.pdb_ex219_en118_LHD289_DHR62_BA_A_0001_0007.pdb_ex384_en23_FF74Y.pdb_ex384_en23_ABAA
+ 1942 MEM dump pdb after
+resplicing cyclic chains
+mbb0001 000307 score0 fail 1 307 score0 185.29271205423896 rms -1 grade AFAB
+resplicing cyclic chains
+mbb0001 000308 score0 fail 1 308 score0 86.40758008582708 rms -1 grade AAAA
+resplicing cyclic chains
+mbb000001 0309 score0sym fail 8.954317605262899 rms -1 grade ABAA
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '45', '0']
+solution ./worms_mbb0001__0310_144-304_FF74Y.pdb_ex194_en142_LHD289_DHR53_BA_A_0005_0013.pdb_ex401_en34_FF74Y.pdb_ex401_en34_ABAB
+ 1942 MEM dump pdb after
+resplicing cyclic chains
+mbb000001 0311 score0sym fail 24.571090280402498 rms -1 grade AFAA
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '28', '0']
+solution ./worms_mbb0001__0312_85-264_FF74Y.pdb_ex189_en70_LHD289_DHR82_BA_A_0003_0003.pdb_ex391_en10_FF74Y.pdb_ex391_en10_ABAA
+ 1943 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '54', '0']
+solution ./worms_mbb0001__0313_124-298_FF74Y.pdb_ex188_en35_LHD289_DHR52_BA_A_0006_0002.pdb_ex402_en14_FF74Y.pdb_ex402_en14_ABAA
+ 1947 MEM dump pdb after
+resplicing cyclic chains
+mbb0001 000314 score0 fail 1 314 score0 130.20489590189612 rms -1 grade ABAB
+resplicing cyclic chains
+mbb0001 000315 score0 fail 1 315 score0 25.59512243911861 rms -1 grade AFAA
+resplicing cyclic chains
+!!!!!!! 1 mseg 0 ['0', '59', '0']
+solution ./worms_mbb0001__0316_124-300_FF74Y.pdb_ex190_en99_LHD278_DHR52_BA_A_0001_0005.pdb_ex386_en14_FF74Y.pdb_ex386_en14_ABAA
+ 1947 MEM dump pdb after
+resplicing cyclic chains
+mbb0001 000317 score0 fail 1 317 score0 11.44704262158748 rms -1 grade ABAB
+use new vertex 0
+use new vertex 2
+grow_linear stage0_mbb0002 done, nresults 1,252, total_samples 16,397,220, samp/sec 199,010, redundant ratio 1.0
+mbb0002 geometry: removing 59  of 458 results
+    mbb0002 nresults after clash/geom check 399
+clear db 1951.21484375 1951.21484375 0.0
+reading pdb /home/apillai1/working/JHB7Yr2.pdb
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR21_BA_A_0002_0002.pdb
+resplicing cyclic chains
+mbb0002 000000 score0 fail 2 0 score0 4.915860048895738 rms -1 grade ABAB
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD289_DHR53_BA_A_0001_0008.pdb
+resplicing cyclic chains
+mbb0002 000001 score0 fail 2 1 score0 213.19690465985647 rms -1 grade ABAB
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD278_DHR53_BA_A_0003_0003.pdb
+resplicing cyclic chains
+mbb0002 000002 score0 fail 2 2 score0 1.032340960224123 rms -1 grade ABBB
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD289_DHR82_BA_A_0005_0006.pdb
+resplicing cyclic chains
+mbb0002 000003 score0 fail 2 3 score0 1.2889346577879013 rms -1 grade ABAB
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR57_BA_A_0001_0006.pdb
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '1', '0']
+solution ./worms_mbb0002__0004_213-369_JHB7Yr2.pdb_ex183_en122_LHD289_DHR57_BA_A_0001_0006.pdb_ex503_en27_JHB7Yr2.pdb_ex503_en27_ABAB
+ 1979 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR21_BA_A_0014_0001.pdb
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '50', '0']
+solution ./worms_mbb0002__0005_205-327_JHB7Yr2.pdb_ex168_en5_LHD289_DHR21_BA_A_0014_0001.pdb_ex442_en46_JHB7Yr2.pdb_ex442_en46_AFAA
+ 1986 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR62_BA_A_0001_0007.pdb
+resplicing cyclic chains
+mbb0002 000006 score0 fail 2 6 score0 2.8932842471696567 rms -1 grade ABBB
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD289_DHR82_BA_A_0001_0015.pdb
+resplicing cyclic chains
+mbb0002 000007 score0 fail 2 7 score0 1.111807953438123 rms -1 grade ABAB
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD278_DHR52_BA_A_0001_0005.pdb
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '59', '0']
+solution ./worms_mbb0002__0008_84-252_JHB7Yr2.pdb_ex215_en146_LHD278_DHR52_BA_A_0001_0005.pdb_ex346_en47_JHB7Yr2.pdb_ex346_en47_ABAB
+ 1974 MEM dump pdb after
+resplicing cyclic chains
+mbb000002 0009 score0sym fail 342.25074516320024 rms -1 grade AFAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '50', '0']
+solution ./worms_mbb0002__0010_170-339_JHB7Yr2.pdb_ex216_en119_LHD289_DHR21_BA_A_0014_0001.pdb_ex407_en47_JHB7Yr2.pdb_ex407_en47_AFAB
+ 1985 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR59_BA_A_0001_0003.pdb
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '5', '0']
+solution ./worms_mbb0002__0011_124-270_JHB7Yr2.pdb_ex170_en59_LHD289_DHR59_BA_A_0001_0003.pdb_ex398_en24_JHB7Yr2.pdb_ex398_en24_ABAA
+ 1991 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '48', '0']
+solution ./worms_mbb0002__0012_84-286_JHB7Yr2.pdb_ex216_en150_LHD289_DHR82_BA_A_0005_0006.pdb_ex417_en14_JHB7Yr2.pdb_ex417_en14_ABAA
+ 1990 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD278_DHR46_BA_A_0003_0011.pdb
+resplicing cyclic chains
+mbb000002 0013 score0sym fail 55.22879461381887 rms -1 grade AFAB
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR53_BA_A_0001_0017.pdb
+resplicing cyclic chains
+mbb0002 000014 score0 fail 2 14 score0 1.0402836343628652 rms -1 grade ABAB
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR53_BA_A_0004_0004.pdb
+resplicing cyclic chains
+mbb0002 000015 score0 fail 2 15 score0 3.864818098778855 rms -1 grade ABAB
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR59_BA_A_0001_0019.pdb
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '35', '0']
+solution ./worms_mbb0002__0016_213-338_JHB7Yr2.pdb_ex171_en105_LHD289_DHR59_BA_A_0001_0019.pdb_ex477_en46_JHB7Yr2.pdb_ex477_en46_ABAB
+ 2006 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '49', '0']
+solution ./worms_mbb0002__0017_145-286_JHB7Yr2.pdb_ex186_en143_LHD289_DHR53_BA_A_0001_0008.pdb_ex402_en45_JHB7Yr2.pdb_ex402_en45_ABAB
+ 1993 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD289_DHR82_BA_A_0001_0012.pdb
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '53', '0']
+solution ./worms_mbb0002__0018_145-274_JHB7Yr2.pdb_ex173_en76_LHD289_DHR82_BA_A_0001_0012.pdb_ex471_en44_JHB7Yr2.pdb_ex471_en44_ABAB
+ 2013 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR54_BA_A_0001_0002.pdb
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '24', '0']
+solution ./worms_mbb0002__0019_211-375_JHB7Yr2.pdb_ex169_en143_LHD289_DHR54_BA_A_0001_0002.pdb_ex493_en5_JHB7Yr2.pdb_ex493_en5_AFAA
+ 2016 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR59_BA_A_0009_0001.pdb
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '29', '0']
+solution ./worms_mbb0002__0020_208-374_JHB7Yr2.pdb_ex175_en42_LHD289_DHR59_BA_A_0009_0001.pdb_ex498_en9_JHB7Yr2.pdb_ex498_en9_AFAA
+ 2012 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR53_BA_A_0005_0013.pdb
+resplicing cyclic chains
+mbb0002 000021 score0 fail 2 21 score0 1.0631456278770786 rms -1 grade ABAA
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '42', '0']
+solution ./worms_mbb0002__0022_193-386_JHB7Yr2.pdb_ex206_en81_LHD289_DHR62_BA_A_0001_0007.pdb_ex451_en13_JHB7Yr2.pdb_ex451_en13_ABAA
+ 2029 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD289_DHR46_BA_A_0003_0002.pdb
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '3', '0']
+solution ./worms_mbb0002__0023_106-287_JHB7Yr2.pdb_ex186_en82_LHD289_DHR46_BA_A_0003_0002.pdb_ex349_en5_JHB7Yr2.pdb_ex349_en5_ABBB
+ 2029 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '49', '0']
+solution ./worms_mbb0002__0024_171-335_JHB7Yr2.pdb_ex172_en29_LHD289_DHR53_BA_A_0001_0008.pdb_ex428_en8_JHB7Yr2.pdb_ex428_en8_ABAA
+ 2032 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR21_BA_A_0003_0006.pdb
+resplicing cyclic chains
+mbb0002 000025 score0 fail 2 25 score0 1.7547650056581636 rms -1 grade AFAB
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD289_DHR53_BA_A_0009.pdb
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '2', '0']
+solution ./worms_mbb0002__0026_167-339_JHB7Yr2.pdb_ex216_en136_LHD289_DHR53_BA_A_0009.pdb_ex421_en44_JHB7Yr2.pdb_ex421_en44_AFAB
+ 2032 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000027 score0 fail 2 27 score0 1.2018705065689017 rms -1 grade ABAA
+resplicing cyclic chains
+mbb0002 000028 score0 fail 2 28 score0 3.8628529923364496 rms -1 grade ABAB
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD289_DHR39_BA_A_0003_0009.pdb
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '6', '0']
+solution ./worms_mbb0002__0029_165-285_JHB7Yr2.pdb_ex168_en97_LHD289_DHR39_BA_A_0003_0009.pdb_ex411_en48_JHB7Yr2.pdb_ex411_en48_AFAB
+ 2032 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000030 score0 fail 2 30 score0 1.1603485032646195 rms -1 grade AFAA
+resplicing cyclic chains
+mbb0002 000031 score0 fail 2 31 score0 39.26956473391356 rms -1 grade ABAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '5', '0']
+solution ./worms_mbb0002__0032_149-349_JHB7Yr2.pdb_ex212_en134_LHD289_DHR59_BA_A_0001_0003.pdb_ex423_en12_JHB7Yr2.pdb_ex423_en12_ABAA
+ 2033 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '45', '0']
+solution ./worms_mbb0002__0033_142-342_JHB7Yr2.pdb_ex205_en75_LHD289_DHR53_BA_A_0005_0013.pdb_ex399_en5_JHB7Yr2.pdb_ex399_en5_ABBA
+ 2038 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR54_BA_A_0003_0015.pdb
+resplicing cyclic chains
+mbb0002 000034 score0 fail 2 34 score0 262.21806059013744 rms -1 grade ABAB
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD289_DHR80_BA_A_0003_0001.pdb
+resplicing cyclic chains
+mbb000002 0035 score0sym fail 142.08028166369542 rms -1 grade AFAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '45', '0']
+solution ./worms_mbb0002__0036_122-283_JHB7Yr2.pdb_ex210_en94_LHD289_DHR53_BA_A_0005_0013.pdb_ex379_en49_JHB7Yr2.pdb_ex379_en49_AFAA
+ 2038 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '35', '0']
+solution ./worms_mbb0002__0037_194-396_JHB7Yr2.pdb_ex209_en17_LHD289_DHR59_BA_A_0001_0019.pdb_ex458_en7_JHB7Yr2.pdb_ex458_en7_ABBA
+ 2034 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR82_BA_A_0003_0003.pdb
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '28', '0']
+solution ./worms_mbb0002__0038_120-288_JHB7Yr2.pdb_ex215_en122_LHD289_DHR82_BA_A_0003_0003.pdb_ex426_en47_JHB7Yr2.pdb_ex426_en47_AFAA
+ 2042 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000039 score0 fail 2 39 score0 1.4626461409432212 rms -1 grade AFAB
+resplicing cyclic chains
+mbb0002 000040 score0 fail 2 40 score0 1.078466134512266 rms -1 grade AFAB
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR52_BA_A_0006_0002.pdb
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '54', '0']
+solution ./worms_mbb0002__0041_193-331_JHB7Yr2.pdb_ex184_en112_LHD289_DHR52_BA_A_0006_0002.pdb_ex471_en46_JHB7Yr2.pdb_ex471_en46_ABBB
+ 2049 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR59_BA_A_0001_0017.pdb
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '43', '0']
+solution ./worms_mbb0002__0042_183-372_JHB7Yr2.pdb_ex215_en111_LHD289_DHR59_BA_A_0001_0017.pdb_ex480_en26_JHB7Yr2.pdb_ex480_en26_ABAA
+ 2036 MEM dump pdb after
+resplicing cyclic chains
+mbb000002 0043 score0sym fail 5.312455680753519 rms -1 grade AFAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '35', '0']
+solution ./worms_mbb0002__0044_211-369_JHB7Yr2.pdb_ex169_en55_LHD289_DHR59_BA_A_0001_0019.pdb_ex475_en11_JHB7Yr2.pdb_ex475_en11_ABAB
+ 2041 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '45', '0']
+solution ./worms_mbb0002__0045_101-284_JHB7Yr2.pdb_ex207_en48_LHD289_DHR53_BA_A_0005_0013.pdb_ex358_en24_JHB7Yr2.pdb_ex358_en24_ABAA
+ 2052 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '28', '0']
+solution ./worms_mbb0002__0046_105-292_JHB7Yr2.pdb_ex215_en64_LHD289_DHR82_BA_A_0003_0003.pdb_ex411_en28_JHB7Yr2.pdb_ex411_en28_ABAA
+ 2057 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000047 score0 fail 2 47 score0 1.0507056093492748 rms -1 grade ABAB
+resplicing cyclic chains
+mbb0002 000048 score0 fail 2 48 score0 1.3380064526265827 rms -1 grade ABAB
+resplicing cyclic chains
+mbb0002 000049 score0 fail 2 49 score0 1.0729384793201917 rms -1 grade ABAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '6', '0']
+solution ./worms_mbb0002__0050_170-350_JHB7Yr2.pdb_ex214_en49_LHD289_DHR39_BA_A_0003_0009.pdb_ex416_en34_JHB7Yr2.pdb_ex416_en34_AFAA
+ 2034 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '28', '0']
+solution ./worms_mbb0002__0051_128-335_JHB7Yr2.pdb_ex215_en20_LHD289_DHR82_BA_A_0003_0003.pdb_ex434_en8_JHB7Yr2.pdb_ex434_en8_ABAA
+ 2043 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR79_BA_A_0003_0004.pdb
+resplicing cyclic chains
+mbb0002 000052 score0 fail 2 52 score0 81.9287922121689 rms -1 grade ABAB
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR53_BA_A_0006_0001.pdb
+resplicing cyclic chains
+mbb000002 0053 score0sym fail 26.427740056119276 rms -1 grade ABBB
+resplicing cyclic chains
+mbb0002 000054 score0 fail 2 54 score0 1.5656676047881168 rms -1 grade ABAA
+resplicing cyclic chains
+mbb000002 0055 score0sym fail 5.804304864710605 rms -1 grade AFAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '14', '0']
+solution ./worms_mbb0002__0056_82-285_JHB7Yr2.pdb_ex215_en92_LHD289_DHR53_BA_A_0001_0017.pdb_ex336_en12_JHB7Yr2.pdb_ex336_en12_ABAA
+ 2054 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '5', '0']
+solution ./worms_mbb0002__0057_138-302_JHB7Yr2.pdb_ex172_en13_LHD289_DHR59_BA_A_0001_0003.pdb_ex412_en8_JHB7Yr2.pdb_ex412_en8_AFAA
+ 2047 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD317_DHR82_BA_A_0001_0011.pdb
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '15', '0']
+solution ./worms_mbb0002__0058_229-418_JHB7Yr2.pdb_ex214_en138_LHD317_DHR82_BA_A_0001_0011.pdb_ex559_en25_JHB7Yr2.pdb_ex559_en25_ABAA
+ 2057 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000059 score0 fail 2 59 score0 1.4309294199119251 rms -1 grade AFAA
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '45', '0']
+solution ./worms_mbb0002__0060_161-371_JHB7Yr2.pdb_ex215_en138_LHD289_DHR53_BA_A_0005_0013.pdb_ex418_en5_JHB7Yr2.pdb_ex418_en5_ABAB
+ 2064 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD278_DHR09_BA_A_0009.pdb
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '30', '0']
+solution ./worms_mbb0002__0061_78-201_JHB7Yr2.pdb_ex171_en131_LHD278_DHR09_BA_A_0009.pdb_ex355_en48_JHB7Yr2.pdb_ex355_en48_AFAB
+ 2049 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000062 score0 fail 2 62 score0 1.2683019637061863 rms -1 grade AFAB
+resplicing cyclic chains
+mbb0002 000063 score0 fail 2 63 score0 42.58014763740775 rms -1 grade AFAB
+resplicing cyclic chains
+mbb000002 0064 score0sym fail 4.996186263508765 rms -1 grade AFAB
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD317_DHR82_BA_A_0001_0009.pdb
+resplicing cyclic chains
+mbb0002 000065 score0 fail 2 65 score0 1.5191134827608654 rms -1 grade ABAA
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR76_BA_A_0001_0020.pdb
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '39', '0']
+solution ./worms_mbb0002__0066_83-239_JHB7Yr2.pdb_ex168_en127_LHD289_DHR76_BA_A_0001_0020.pdb_ex364_en12_JHB7Yr2.pdb_ex364_en12_AFAA
+ 2063 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '45', '0']
+solution ./worms_mbb0002__0067_167-349_JHB7Yr2.pdb_ex213_en36_LHD289_DHR53_BA_A_0005_0013.pdb_ex424_en31_JHB7Yr2.pdb_ex424_en31_AFAA
+ 2062 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '45', '0']
+solution ./worms_mbb0002__0068_138-312_JHB7Yr2.pdb_ex182_en9_LHD289_DHR53_BA_A_0005_0013.pdb_ex395_en8_JHB7Yr2.pdb_ex395_en8_AFAA
+ 2083 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000069 score0 fail 2 69 score0 1.0425019960926085 rms -1 grade ABAB
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD278_DHR54_BA_A_0003_0012.pdb
+resplicing cyclic chains
+mbb0002 000070 score0 fail 2 70 score0 7.951664306964507 rms -1 grade ABAB
+resplicing cyclic chains
+mbb0002 000071 score0 fail 2 71 score0 1.1646446622758426 rms -1 grade AFAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '39', '0']
+solution ./worms_mbb0002__0072_182-312_JHB7Yr2.pdb_ex175_en96_LHD289_DHR76_BA_A_0001_0020.pdb_ex463_en45_JHB7Yr2.pdb_ex463_en45_ABAB
+ 2080 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000073 score0 fail 2 73 score0 153.68370399531665 rms -1 grade ABAB
+resplicing cyclic chains
+mbb0002 000074 score0 fail 2 74 score0 2.4238920676133127 rms -1 grade AFAB
+resplicing cyclic chains
+mbb0002 000075 score0 fail 2 75 score0 26.660162365084183 rms -1 grade ABAB
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD289_DHR21_BA_A_0014_0008.pdb
+resplicing cyclic chains
+mbb0002 000076 score0 fail 2 76 score0 1.2445025160364867 rms -1 grade ABAB
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD317_DHR80_BA_A_0002_0003.pdb
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '27', '0']
+solution ./worms_mbb0002__0077_124-282_JHB7Yr2.pdb_ex184_en123_LHD317_DHR80_BA_A_0002_0003.pdb_ex425_en26_JHB7Yr2.pdb_ex425_en26_AFBB
+ 2090 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD317_DHR59_BA_A_0003_0003.pdb
+resplicing cyclic chains
+mbb0002 000078 score0 fail 2 78 score0 3.359704835348373 rms -1 grade ABAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '55', '0']
+solution ./worms_mbb0002__0079_121-283_JHB7Yr2.pdb_ex210_en148_LHD289_DHR79_BA_A_0003_0004.pdb_ex452_en48_JHB7Yr2.pdb_ex452_en48_AFAB
+ 2098 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000080 score0 fail 2 80 score0 72.96290047102967 rms -1 grade ABAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '55', '0']
+solution ./worms_mbb0002__0081_79-275_JHB7Yr2.pdb_ex205_en150_LHD289_DHR79_BA_A_0003_0004.pdb_ex410_en9_JHB7Yr2.pdb_ex410_en9_ABAB
+ 2097 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000082 score0 fail 2 82 score0 1.0389983156300666 rms -1 grade ABAB
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD289_DHR59_BA_A_0001_0003.pdb
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '32', '0']
+solution ./worms_mbb0002__0083_185-386_JHB7Yr2.pdb_ex206_en135_LHD289_DHR59_BA_A_0001_0003.pdb_ex459_en5_JHB7Yr2.pdb_ex459_en5_ABBA
+ 2090 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000084 score0 fail 2 84 score0 14.397666748145713 rms -1 grade AFAB
+resplicing cyclic chains
+mbb0002 000085 score0 fail 2 85 score0 89.88135024605222 rms -1 grade AFAA
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '43', '0']
+solution ./worms_mbb0002__0086_145-275_JHB7Yr2.pdb_ex174_en56_LHD289_DHR59_BA_A_0001_0017.pdb_ex442_en44_JHB7Yr2.pdb_ex442_en44_ABAB
+ 2110 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD317_DHR54_BA_A_0003_0005.pdb
+resplicing cyclic chains
+mbb0002 000087 score0 fail 2 87 score0 1.1880376476120331 rms -1 grade AFAA
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '55', '0']
+solution ./worms_mbb0002__0088_211-397_JHB7Yr2.pdb_ex211_en44_LHD289_DHR79_BA_A_0003_0004.pdb_ex542_en25_JHB7Yr2.pdb_ex542_en25_ABAA
+ 2110 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD278_DHR54_BA_A_0005_0002.pdb
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '13', '0']
+solution ./worms_mbb0002__0089_145-281_JHB7Yr2.pdb_ex168_en135_LHD278_DHR54_BA_A_0005_0002.pdb_ex427_en32_JHB7Yr2.pdb_ex427_en32_ABAA
+ 2117 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000090 score0 fail 2 90 score0 1.09768155281065 rms -1 grade ABAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '1', '0']
+solution ./worms_mbb0002__0091_83-243_JHB7Yr2.pdb_ex186_en85_LHD289_DHR57_BA_A_0001_0006.pdb_ex373_en26_JHB7Yr2.pdb_ex373_en26_AFAB
+ 2117 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD321_DHR53_BA_A_0015_0003.pdb
+resplicing cyclic chains
+mbb0002 000092 score0 fail 2 92 score0 1.0996936480809998 rms -1 grade ABAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '45', '0']
+solution ./worms_mbb0002__0093_126-304_JHB7Yr2.pdb_ex184_en30_LHD289_DHR53_BA_A_0005_0013.pdb_ex383_en6_JHB7Yr2.pdb_ex383_en6_ABAA
+ 2109 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '35', '0']
+solution ./worms_mbb0002__0094_185-361_JHB7Yr2.pdb_ex204_en133_LHD289_DHR59_BA_A_0001_0019.pdb_ex449_en28_JHB7Yr2.pdb_ex449_en28_ABAA
+ 2129 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '1', '0']
+solution ./worms_mbb0002__0095_213-373_JHB7Yr2.pdb_ex187_en126_LHD289_DHR57_BA_A_0001_0006.pdb_ex503_en27_JHB7Yr2.pdb_ex503_en27_ABAB
+ 2134 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '49', '0']
+solution ./worms_mbb0002__0096_212-364_JHB7Yr2.pdb_ex185_en99_LHD289_DHR53_BA_A_0001_0008.pdb_ex469_en33_JHB7Yr2.pdb_ex469_en33_AFAB
+ 2132 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD278_DHR59_BA_A_0003_0014.pdb
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '60', '0']
+solution ./worms_mbb0002__0097_181-324_JHB7Yr2.pdb_ex174_en133_LHD278_DHR59_BA_A_0003_0014.pdb_ex482_en31_JHB7Yr2.pdb_ex482_en31_AFAA
+ 2136 MEM dump pdb after
+resplicing cyclic chains
+mbb000002 0098 score0sym fail 15.816842800396007 rms -1 grade AFAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '44', '0']
+solution ./worms_mbb0002__0099_203-357_JHB7Yr2.pdb_ex168_en82_LHD289_DHR80_BA_A_0003_0001.pdb_ex503_en14_JHB7Yr2.pdb_ex503_en14_AFAB
+ 2145 MEM dump pdb after
+clear db 2145.50390625 2145.50390625 0.0
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '38', '0']
+solution ./worms_mbb0002__0100_84-252_JHB7Yr2.pdb_ex215_en134_LHD278_DHR46_BA_A_0003_0011.pdb_ex334_en47_JHB7Yr2.pdb_ex334_en47_ABAB
+ 2121 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000101 score0 fail 2 101 score0 7.8298159398356635 rms -1 grade ABBB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '47', '0']
+solution ./worms_mbb0002__0102_124-279_JHB7Yr2.pdb_ex186_en93_LHD278_DHR53_BA_A_0003_0003.pdb_ex382_en31_JHB7Yr2.pdb_ex382_en31_AFAB
+ 2130 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '32', '0']
+solution ./worms_mbb0002__0103_103-219_JHB7Yr2.pdb_ex169_en150_LHD289_DHR59_BA_A_0001_0003.pdb_ex377_en53_JHB7Yr2.pdb_ex377_en53_AFAB
+ 2130 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000104 score0 fail 2 104 score0 1.4348296638038742 rms -1 grade ABAA
+resplicing cyclic chains
+mbb0002 000105 score0 fail 2 105 score0 1.1870339246106913 rms -1 grade ABAA
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '28', '0']
+solution ./worms_mbb0002__0106_181-384_JHB7Yr2.pdb_ex211_en104_LHD289_DHR82_BA_A_0003_0003.pdb_ex487_en8_JHB7Yr2.pdb_ex487_en8_AFAA
+ 2126 MEM dump pdb after
+resplicing cyclic chains
+mbb000002 0107 score0sym fail 53.826049304088045 rms -1 grade ABBB
+resplicing cyclic chains
+mbb0002 000108 score0 fail 2 108 score0 61.41417099518694 rms -1 grade ABAB
+resplicing cyclic chains
+mbb0002 000109 score0 fail 2 109 score0 1.3967303180899897 rms -1 grade AFAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '45', '0']
+solution ./worms_mbb0002__0110_84-238_JHB7Yr2.pdb_ex201_en92_LHD289_DHR53_BA_A_0005_0013.pdb_ex341_en47_JHB7Yr2.pdb_ex341_en47_ABAB
+ 2126 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000111 score0 fail 2 111 score0 1.0874241081057567 rms -1 grade ABAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '45', '0']
+solution ./worms_mbb0002__0112_124-269_JHB7Yr2.pdb_ex169_en90_LHD289_DHR53_BA_A_0005_0013.pdb_ex381_en24_JHB7Yr2.pdb_ex381_en24_ABAB
+ 2128 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000113 score0 fail 2 113 score0 170.2168165108813 rms -1 grade ABAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '28', '0']
+solution ./worms_mbb0002__0114_212-362_JHB7Yr2.pdb_ex183_en120_LHD289_DHR82_BA_A_0003_0003.pdb_ex518_en33_JHB7Yr2.pdb_ex518_en33_AFAB
+ 2119 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000115 score0 fail 2 115 score0 1.9707972699021639 rms -1 grade ABAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '29', '0']
+solution ./worms_mbb0002__0116_164-321_JHB7Yr2.pdb_ex168_en32_LHD289_DHR59_BA_A_0009_0001.pdb_ex454_en11_JHB7Yr2.pdb_ex454_en11_AFBB
+ 2148 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR53_BA_A_0010_0001.pdb
+resplicing cyclic chains
+mbb0002 000117 score0 fail 2 117 score0 2.9802359014268096 rms -1 grade AFAB
+resplicing cyclic chains
+mbb0002 000118 score0 fail 2 118 score0 4.977856041553673 rms -1 grade ABAB
+resplicing cyclic chains
+mbb0002 000119 score0 fail 2 119 score0 70.9687457907258 rms -1 grade ABAA
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '49', '0']
+solution ./worms_mbb0002__0120_208-360_JHB7Yr2.pdb_ex181_en95_LHD289_DHR53_BA_A_0001_0008.pdb_ex465_en29_JHB7Yr2.pdb_ex465_en29_AFAB
+ 2148 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000121 score0 fail 2 121 score0 3.6439170951436455 rms -1 grade ABAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '27', '0']
+solution ./worms_mbb0002__0122_166-340_JHB7Yr2.pdb_ex179_en52_LHD317_DHR80_BA_A_0002_0003.pdb_ex467_en5_JHB7Yr2.pdb_ex467_en5_ABBB
+ 2154 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '3', '0']
+solution ./worms_mbb0002__0123_102-282_JHB7Yr2.pdb_ex212_en132_LHD289_DHR46_BA_A_0003_0002.pdb_ex345_en32_JHB7Yr2.pdb_ex345_en32_ABAB
+ 2130 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '28', '0']
+solution ./worms_mbb0002__0124_75-239_JHB7Yr2.pdb_ex216_en65_LHD289_DHR82_BA_A_0003_0003.pdb_ex381_en52_JHB7Yr2.pdb_ex381_en52_AFAA
+ 2141 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '6', '0']
+solution ./worms_mbb0002__0125_102-237_JHB7Yr2.pdb_ex187_en136_LHD289_DHR39_BA_A_0003_0009.pdb_ex348_en52_JHB7Yr2.pdb_ex348_en52_ABAB
+ 2141 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '60', '0']
+solution ./worms_mbb0002__0126_81-235_JHB7Yr2.pdb_ex185_en130_LHD278_DHR59_BA_A_0003_0014.pdb_ex382_en31_JHB7Yr2.pdb_ex382_en31_ABAA
+ 2141 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '35', '0']
+solution ./worms_mbb0002__0127_168-309_JHB7Yr2.pdb_ex185_en64_LHD289_DHR59_BA_A_0001_0019.pdb_ex432_en44_JHB7Yr2.pdb_ex432_en44_ABAB
+ 2145 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '1', '0']
+solution ./worms_mbb0002__0128_183-332_JHB7Yr2.pdb_ex182_en34_LHD289_DHR57_BA_A_0001_0006.pdb_ex473_en33_JHB7Yr2.pdb_ex473_en33_AFAB
+ 2156 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '7', '0']
+solution ./worms_mbb0002__0129_184-380_JHB7Yr2.pdb_ex203_en148_LHD289_DHR53_BA_A_0004_0004.pdb_ex438_en7_JHB7Yr2.pdb_ex438_en7_AFAB
+ 2142 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '33', '0']
+solution ./worms_mbb0002__0130_85-208_JHB7Yr2.pdb_ex171_en117_LHD289_DHR53_BA_A_0010_0001.pdb_ex332_en48_JHB7Yr2.pdb_ex332_en48_AFAA
+ 2142 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000131 score0 fail 2 131 score0 11.591837752714154 rms -1 grade ABAB
+resplicing cyclic chains
+mbb000002 0132 score0sym fail 19.43265968920447 rms -1 grade AFAA
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '25', '0']
+solution ./worms_mbb0002__0133_164-372_JHB7Yr2.pdb_ex216_en123_LHD289_DHR82_BA_A_0001_0015.pdb_ex470_en8_JHB7Yr2.pdb_ex470_en8_AFAA
+ 2150 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '28', '0']
+solution ./worms_mbb0002__0134_181-376_JHB7Yr2.pdb_ex203_en38_LHD289_DHR82_BA_A_0003_0003.pdb_ex487_en8_JHB7Yr2.pdb_ex487_en8_AFAA
+ 2165 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000135 score0 fail 2 135 score0 4.039000509448516 rms -1 grade AFAA
+resplicing cyclic chains
+mbb000002 0136 score0sym fail 25.89729522035941 rms -1 grade AFAA
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '28', '0']
+solution ./worms_mbb0002__0137_189-375_JHB7Yr2.pdb_ex212_en123_LHD289_DHR82_BA_A_0003_0003.pdb_ex495_en26_JHB7Yr2.pdb_ex495_en26_ABAA
+ 2151 MEM dump pdb after
+resplicing cyclic chains
+mbb000002 0138 score0sym fail 4.9975825827101685 rms -1 grade AFBB
+resplicing cyclic chains
+mbb0002 000139 score0 fail 2 139 score0 1.2571590745520895 rms -1 grade AFAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '59', '0']
+solution ./worms_mbb0002__0140_185-360_JHB7Yr2.pdb_ex180_en12_LHD278_DHR52_BA_A_0001_0005.pdb_ex447_en5_JHB7Yr2.pdb_ex447_en5_ABAB
+ 2158 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '13', '0']
+solution ./worms_mbb0002__0141_105-260_JHB7Yr2.pdb_ex199_en143_LHD278_DHR54_BA_A_0005_0002.pdb_ex387_en44_JHB7Yr2.pdb_ex387_en44_ABBB
+ 2131 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000142 score0 fail 2 142 score0 26.355561922748684 rms -1 grade ABAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '45', '0']
+solution ./worms_mbb0002__0143_79-223_JHB7Yr2.pdb_ex173_en51_LHD289_DHR53_BA_A_0005_0013.pdb_ex336_en29_JHB7Yr2.pdb_ex336_en29_ABAB
+ 2134 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '59', '0']
+solution ./worms_mbb0002__0144_75-244_JHB7Yr2.pdb_ex214_en138_LHD278_DHR52_BA_A_0001_0005.pdb_ex337_en45_JHB7Yr2.pdb_ex337_en45_AFAB
+ 2134 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '44', '0']
+solution ./worms_mbb0002__0145_83-284_JHB7Yr2.pdb_ex214_en130_LHD289_DHR80_BA_A_0003_0001.pdb_ex383_en13_JHB7Yr2.pdb_ex383_en13_ABAA
+ 2138 MEM dump pdb after
+resplicing cyclic chains
+mbb000002 0146 score0sym fail 9.233357411820691 rms -1 grade ABAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '25', '0']
+solution ./worms_mbb0002__0147_85-252_JHB7Yr2.pdb_ex215_en20_LHD289_DHR82_BA_A_0001_0015.pdb_ex391_en48_JHB7Yr2.pdb_ex391_en48_ABAA
+ 2148 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '2', '0']
+solution ./worms_mbb0002__0148_125-290_JHB7Yr2.pdb_ex170_en77_LHD289_DHR53_BA_A_0009.pdb_ex379_en5_JHB7Yr2.pdb_ex379_en5_AFAA
+ 2139 MEM dump pdb after
+resplicing cyclic chains
+mbb000002 0149 score0sym fail 254.20425726071986 rms -1 grade AFAB
+resplicing cyclic chains
+mbb0002 000150 score0 fail 2 150 score0 310.7700237737815 rms -1 grade ABAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '25', '0']
+solution ./worms_mbb0002__0151_169-331_JHB7Yr2.pdb_ex208_en126_LHD289_DHR82_BA_A_0001_0015.pdb_ex475_en46_JHB7Yr2.pdb_ex475_en46_AFBB
+ 2145 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000152 score0 fail 2 152 score0 2.3777068697766848 rms -1 grade AFAA
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR21_BA_A_0014_0008.pdb
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '37', '0']
+solution ./worms_mbb0002__0153_183-371_JHB7Yr2.pdb_ex215_en141_LHD289_DHR21_BA_A_0014_0008.pdb_ex443_en27_JHB7Yr2.pdb_ex443_en27_ABAB
+ 2149 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '30', '0']
+solution ./worms_mbb0002__0154_71-253_JHB7Yr2.pdb_ex203_en133_LHD278_DHR09_BA_A_0009.pdb_ex348_en21_JHB7Yr2.pdb_ex348_en21_AFAA
+ 2137 MEM dump pdb after
+resplicing cyclic chains
+mbb000002 0155 score0sym fail 30.10194830216732 rms -1 grade ABBB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '50', '0']
+solution ./worms_mbb0002__0156_103-230_JHB7Yr2.pdb_ex180_en120_LHD289_DHR21_BA_A_0014_0001.pdb_ex340_en53_JHB7Yr2.pdb_ex340_en53_ABBB
+ 2137 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '42', '0']
+solution ./worms_mbb0002__0157_193-383_JHB7Yr2.pdb_ex203_en78_LHD289_DHR62_BA_A_0001_0007.pdb_ex451_en13_JHB7Yr2.pdb_ex451_en13_ABAA
+ 2158 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000158 score0 fail 2 158 score0 219.722504841264 rms -1 grade ABAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '27', '0']
+solution ./worms_mbb0002__0159_207-393_JHB7Yr2.pdb_ex213_en109_LHD317_DHR80_BA_A_0002_0003.pdb_ex508_en27_JHB7Yr2.pdb_ex508_en27_ABAB
+ 2161 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000160 score0 fail 2 160 score0 34.7669908635557 rms -1 grade ABAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '47', '0']
+solution ./worms_mbb0002__0161_188-346_JHB7Yr2.pdb_ex202_en147_LHD278_DHR53_BA_A_0003_0003.pdb_ex446_en44_JHB7Yr2.pdb_ex446_en44_AFAB
+ 2145 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '49', '0']
+solution ./worms_mbb0002__0162_128-255_JHB7Yr2.pdb_ex175_en32_LHD289_DHR53_BA_A_0001_0008.pdb_ex385_en48_JHB7Yr2.pdb_ex385_en48_ABAA
+ 2148 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD278_DHR54_BA_A_0003_0004.pdb
+resplicing cyclic chains
+mbb0002 000163 score0 fail 2 163 score0 2.6660527537378793 rms -1 grade ABAB
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR21_BA_A_0003_0007.pdb
+resplicing cyclic chains
+mbb000002 0164 score0sym fail 19.416711253647332 rms -1 grade ABAB
+resplicing cyclic chains
+mbb0002 000165 score0 fail 2 165 score0 1.6581586978130483 rms -1 grade AFAA
+resplicing cyclic chains
+mbb0002 000166 score0 fail 2 166 score0 2.445673956830454 rms -1 grade ABAA
+resplicing cyclic chains
+mbb0002 000167 score0 fail 2 167 score0 1.0608685545353 rms -1 grade AFAB
+resplicing cyclic chains
+mbb000002 0168 score0sym fail 67.24012672462966 rms -1 grade AFAA
+resplicing cyclic chains
+mbb000002 0169 score0sym fail 4.223475672414607 rms -1 grade AFAB
+resplicing cyclic chains
+mbb0002 000170 score0 fail 2 170 score0 1.3726809547439511 rms -1 grade ABAA
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '49', '0']
+solution ./worms_mbb0002__0171_209-362_JHB7Yr2.pdb_ex183_en97_LHD289_DHR53_BA_A_0001_0008.pdb_ex466_en30_JHB7Yr2.pdb_ex466_en30_AFAB
+ 2166 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '59', '0']
+solution ./worms_mbb0002__0172_102-241_JHB7Yr2.pdb_ex184_en138_LHD278_DHR52_BA_A_0001_0005.pdb_ex364_en45_JHB7Yr2.pdb_ex364_en45_ABAB
+ 2147 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '56', '0']
+solution ./worms_mbb0002__0173_191-340_JHB7Yr2.pdb_ex203_en148_LHD289_DHR53_BA_A_0006_0001.pdb_ex445_en54_JHB7Yr2.pdb_ex445_en54_AFAB
+ 2158 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '14', '0']
+solution ./worms_mbb0002__0174_125-279_JHB7Yr2.pdb_ex186_en93_LHD289_DHR53_BA_A_0001_0017.pdb_ex379_en32_JHB7Yr2.pdb_ex379_en32_AFAB
+ 2158 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000175 score0 fail 2 175 score0 2.5066418067935103 rms -1 grade ABAB
+resplicing cyclic chains
+mbb0002 000176 score0 fail 2 176 score0 2.908148750810483 rms -1 grade ABBB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '14', '0']
+solution ./worms_mbb0002__0177_83-249_JHB7Yr2.pdb_ex212_en143_LHD289_DHR53_BA_A_0001_0017.pdb_ex337_en46_JHB7Yr2.pdb_ex337_en46_ABAB
+ 2147 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '42', '0']
+solution ./worms_mbb0002__0178_170-338_JHB7Yr2.pdb_ex215_en139_LHD289_DHR62_BA_A_0001_0007.pdb_ex428_en47_JHB7Yr2.pdb_ex428_en47_ABAB
+ 2159 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000179 score0 fail 2 179 score0 3.695771220262783 rms -1 grade AFAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '6', '0']
+solution ./worms_mbb0002__0180_167-285_JHB7Yr2.pdb_ex168_en97_LHD289_DHR39_BA_A_0003_0009.pdb_ex413_en50_JHB7Yr2.pdb_ex413_en50_AFAB
+ 2155 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000181 score0 fail 2 181 score0 1.0582645843050071 rms -1 grade ABAA
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '45', '0']
+solution ./worms_mbb0002__0182_191-383_JHB7Yr2.pdb_ex206_en14_LHD289_DHR53_BA_A_0005_0013.pdb_ex448_en14_JHB7Yr2.pdb_ex448_en14_ABAA
+ 2157 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '44', '0']
+solution ./worms_mbb0002__0183_189-384_JHB7Yr2.pdb_ex207_en137_LHD289_DHR80_BA_A_0003_0001.pdb_ex489_en12_JHB7Yr2.pdb_ex489_en12_ABAA
+ 2169 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000184 score0 fail 2 184 score0 1.8666481857163164 rms -1 grade AFAB
+resplicing cyclic chains
+mbb0002 000185 score0 fail 2 185 score0 1.0810995685196112 rms -1 grade AFAA
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR59_BA_A_0003_0007.pdb
+resplicing cyclic chains
+mbb0002 000186 score0 fail 2 186 score0 1.0035565297397164 rms -1 grade AFAA
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '45', '0']
+solution ./worms_mbb0002__0187_80-244_JHB7Yr2.pdb_ex214_en8_LHD289_DHR53_BA_A_0005_0013.pdb_ex337_en50_JHB7Yr2.pdb_ex337_en50_ABBA
+ 2171 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '23', '0']
+solution ./worms_mbb0002__0188_206-365_JHB7Yr2.pdb_ex206_en63_LHD289_DHR21_BA_A_0003_0007.pdb_ex439_en47_JHB7Yr2.pdb_ex439_en47_AFAA
+ 2153 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '35', '0']
+solution ./worms_mbb0002__0189_211-377_JHB7Yr2.pdb_ex178_en16_LHD289_DHR59_BA_A_0001_0019.pdb_ex475_en12_JHB7Yr2.pdb_ex475_en12_AFAB
+ 2159 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000190 score0 fail 2 190 score0 23.442708528577768 rms -1 grade ABAB
+resplicing cyclic chains
+mbb0002 000191 score0 fail 2 191 score0 1.1955576810841373 rms -1 grade ABAA
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '38', '0']
+solution ./worms_mbb0002__0192_168-324_JHB7Yr2.pdb_ex181_en134_LHD278_DHR46_BA_A_0003_0011.pdb_ex418_en25_JHB7Yr2.pdb_ex418_en25_ABAB
+ 2164 MEM dump pdb after
+resplicing cyclic chains
+mbb000002 0193 score0sym fail 30.344691575973357 rms -1 grade ABAB
+resplicing cyclic chains
+mbb0002 000194 score0 fail 2 194 score0 1.4103830362735714 rms -1 grade ABAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '47', '0']
+solution ./worms_mbb0002__0195_165-326_JHB7Yr2.pdb_ex170_en123_LHD278_DHR53_BA_A_0003_0003.pdb_ex423_en9_JHB7Yr2.pdb_ex423_en9_AFAA
+ 2166 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '37', '0']
+solution ./worms_mbb0002__0196_163-328_JHB7Yr2.pdb_ex175_en70_LHD289_DHR21_BA_A_0014_0008.pdb_ex423_en10_JHB7Yr2.pdb_ex423_en10_AFAB
+ 2173 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000197 score0 fail 2 197 score0 1.0635432481517995 rms -1 grade AFAA
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '47', '0']
+solution ./worms_mbb0002__0198_186-362_JHB7Yr2.pdb_ex185_en113_LHD278_DHR53_BA_A_0003_0003.pdb_ex444_en9_JHB7Yr2.pdb_ex444_en9_ABAA
+ 2172 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '4', '0']
+solution ./worms_mbb0002__0199_185-366_JHB7Yr2.pdb_ex209_en104_LHD289_DHR21_BA_A_0003_0006.pdb_ex422_en28_JHB7Yr2.pdb_ex422_en28_ABAA
+ 2171 MEM dump pdb after
+clear db 2171.7109375 2171.7109375 0.0
+resplicing cyclic chains
+mbb0002 000200 score0 fail 2 200 score0 1.5503531203784193 rms -1 grade AFAB
+resplicing cyclic chains
+mbb0002 000201 score0 fail 2 201 score0 1.4307226523686636 rms -1 grade AFAA
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '13', '0']
+solution ./worms_mbb0002__0202_142-282_JHB7Yr2.pdb_ex169_en136_LHD278_DHR54_BA_A_0005_0002.pdb_ex424_en29_JHB7Yr2.pdb_ex424_en29_ABAA
+ 2162 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '14', '0']
+solution ./worms_mbb0002__0203_127-279_JHB7Yr2.pdb_ex186_en93_LHD289_DHR53_BA_A_0001_0017.pdb_ex381_en34_JHB7Yr2.pdb_ex381_en34_AFAB
+ 2164 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000204 score0 fail 2 204 score0 2.114451313153706 rms -1 grade AFAB
+resplicing cyclic chains
+mbb0002 000205 score0 fail 2 205 score0 1.2491215365080564 rms -1 grade ABAA
+resplicing cyclic chains
+mbb0002 000206 score0 fail 2 206 score0 2.709410847888126 rms -1 grade AFAA
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '54', '0']
+solution ./worms_mbb0002__0207_149-334_JHB7Yr2.pdb_ex209_en97_LHD289_DHR52_BA_A_0006_0002.pdb_ex427_en24_JHB7Yr2.pdb_ex427_en24_ABAA
+ 2173 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000208 score0 fail 2 208 score0 1.0691700560016715 rms -1 grade AFAA
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '55', '0']
+solution ./worms_mbb0002__0209_208-373_JHB7Yr2.pdb_ex174_en44_LHD289_DHR79_BA_A_0003_0004.pdb_ex539_en9_JHB7Yr2.pdb_ex539_en9_ABAB
+ 2172 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '27', '0']
+solution ./worms_mbb0002__0210_166-339_JHB7Yr2.pdb_ex178_en51_LHD317_DHR80_BA_A_0002_0003.pdb_ex467_en5_JHB7Yr2.pdb_ex467_en5_ABBB
+ 2182 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '5', '0']
+solution ./worms_mbb0002__0211_85-246_JHB7Yr2.pdb_ex209_en13_LHD289_DHR59_BA_A_0001_0003.pdb_ex359_en48_JHB7Yr2.pdb_ex359_en48_ABAA
+ 2172 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '5', '0']
+solution ./worms_mbb0002__0212_187-387_JHB7Yr2.pdb_ex207_en136_LHD289_DHR59_BA_A_0001_0003.pdb_ex461_en7_JHB7Yr2.pdb_ex461_en7_ABBA
+ 2174 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR62_BA_A_0003_0002.pdb
+resplicing cyclic chains
+mbb0002 000213 score0 fail 2 213 score0 1.2547001997180567 rms -1 grade ABBB
+resplicing cyclic chains
+mbb0002 000214 score0 fail 2 214 score0 195.00696635491414 rms -1 grade ABAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '38', '0']
+solution ./worms_mbb0002__0215_188-346_JHB7Yr2.pdb_ex202_en139_LHD278_DHR46_BA_A_0003_0011.pdb_ex438_en44_JHB7Yr2.pdb_ex438_en44_AFAB
+ 2174 MEM dump pdb after
+resplicing cyclic chains
+mbb000002 0216 score0sym fail 88.56113609030136 rms -1 grade ABAB
+resplicing cyclic chains
+mbb0002 000217 score0 fail 2 217 score0 2.385834585154016 rms -1 grade ABAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '45', '0']
+solution ./worms_mbb0002__0218_73-222_JHB7Yr2.pdb_ex172_en93_LHD289_DHR53_BA_A_0005_0013.pdb_ex330_en23_JHB7Yr2.pdb_ex330_en23_AFAB
+ 2174 MEM dump pdb after
+resplicing cyclic chains
+mbb000002 0219 score0sym fail 34.17632901652225 rms -1 grade AFBA
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD278_DHR59_BA_A_0003_0014.pdb
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '8', '0']
+solution ./worms_mbb0002__0220_182-301_JHB7Yr2.pdb_ex171_en60_LHD278_DHR59_BA_A_0003_0014.pdb_ex483_en52_JHB7Yr2.pdb_ex483_en52_ABAB
+ 2192 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000221 score0 fail 2 221 score0 232.4184249278942 rms -1 grade ABAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '47', '0']
+solution ./worms_mbb0002__0222_75-284_JHB7Yr2.pdb_ex214_en91_LHD278_DHR53_BA_A_0003_0003.pdb_ex333_en5_JHB7Yr2.pdb_ex333_en5_AFAA
+ 2180 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '25', '0']
+solution ./worms_mbb0002__0223_102-258_JHB7Yr2.pdb_ex168_en123_LHD289_DHR82_BA_A_0001_0015.pdb_ex408_en12_JHB7Yr2.pdb_ex408_en12_ABAB
+ 2180 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000224 score0 fail 2 224 score0 1.0070078566693856 rms -1 grade AFAA
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '26', '0']
+solution ./worms_mbb0002__0225_208-341_JHB7Yr2.pdb_ex187_en18_LHD317_DHR59_BA_A_0003_0003.pdb_ex483_en54_JHB7Yr2.pdb_ex483_en54_ABAB
+ 2172 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '4', '0']
+solution ./worms_mbb0002__0226_165-323_JHB7Yr2.pdb_ex170_en11_LHD289_DHR21_BA_A_0003_0006.pdb_ex402_en12_JHB7Yr2.pdb_ex402_en12_AFBB
+ 2191 MEM dump pdb after
+resplicing cyclic chains
+Warning: junction residue not helix:  342
+mbb0002 000227 score0 fail 2 227 score0 2.424115129550575 rms -1 grade AFBB
+resplicing cyclic chains
+mbb0002 000228 score0 fail 2 228 score0 1.03465915568556 rms -1 grade AFAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '44', '0']
+solution ./worms_mbb0002__0229_138-314_JHB7Yr2.pdb_ex184_en122_LHD289_DHR80_BA_A_0003_0001.pdb_ex438_en8_JHB7Yr2.pdb_ex438_en8_AFAA
+ 2185 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000230 score0 fail 2 230 score0 4.623969890820859 rms -1 grade ABAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '3', '0']
+solution ./worms_mbb0002__0231_170-376_JHB7Yr2.pdb_ex213_en133_LHD289_DHR46_BA_A_0003_0002.pdb_ex413_en7_JHB7Yr2.pdb_ex413_en7_ABAB
+ 2184 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000232 score0 fail 2 232 score0 1.1622969851419702 rms -1 grade AFBB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '44', '0']
+solution ./worms_mbb0002__0233_84-230_JHB7Yr2.pdb_ex173_en126_LHD289_DHR80_BA_A_0003_0001.pdb_ex384_en27_JHB7Yr2.pdb_ex384_en27_ABAB
+ 2173 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '14', '0']
+solution ./worms_mbb0002__0234_83-245_JHB7Yr2.pdb_ex215_en92_LHD289_DHR53_BA_A_0001_0017.pdb_ex337_en53_JHB7Yr2.pdb_ex337_en53_ABAA
+ 2174 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '55', '0']
+solution ./worms_mbb0002__0235_209-373_JHB7Yr2.pdb_ex174_en44_LHD289_DHR79_BA_A_0003_0004.pdb_ex540_en10_JHB7Yr2.pdb_ex540_en10_ABAB
+ 2181 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000236 score0 fail 2 236 score0 1.0601344491770204 rms -1 grade ABAA
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '27', '0']
+solution ./worms_mbb0002__0237_205-336_JHB7Yr2.pdb_ex175_en7_LHD317_DHR80_BA_A_0002_0003.pdb_ex506_en44_JHB7Yr2.pdb_ex506_en44_ABAB
+ 2178 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '6', '0']
+solution ./worms_mbb0002__0238_166-285_JHB7Yr2.pdb_ex168_en97_LHD289_DHR39_BA_A_0003_0009.pdb_ex412_en49_JHB7Yr2.pdb_ex412_en49_AFAB
+ 2178 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '25', '0']
+solution ./worms_mbb0002__0239_170-331_JHB7Yr2.pdb_ex208_en126_LHD289_DHR82_BA_A_0001_0015.pdb_ex476_en47_JHB7Yr2.pdb_ex476_en47_ABAA
+ 2187 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '4', '0']
+solution ./worms_mbb0002__0240_84-252_JHB7Yr2.pdb_ex215_en125_LHD289_DHR21_BA_A_0003_0006.pdb_ex321_en47_JHB7Yr2.pdb_ex321_en47_ABAB
+ 2187 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000241 score0 fail 2 241 score0 1.004183947910995 rms -1 grade AFAA
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '59', '0']
+solution ./worms_mbb0002__0242_190-360_JHB7Yr2.pdb_ex180_en12_LHD278_DHR52_BA_A_0001_0005.pdb_ex452_en10_JHB7Yr2.pdb_ex452_en10_ABAB
+ 2174 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '2', '0']
+solution ./worms_mbb0002__0243_183-365_JHB7Yr2.pdb_ex208_en78_LHD289_DHR53_BA_A_0009.pdb_ex437_en26_JHB7Yr2.pdb_ex437_en26_ABAA
+ 2190 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '14', '0']
+solution ./worms_mbb0002__0244_126-288_JHB7Yr2.pdb_ex168_en75_LHD289_DHR53_BA_A_0001_0017.pdb_ex380_en6_JHB7Yr2.pdb_ex380_en6_AFAA
+ 2190 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt90/design/LHD321_DHR62_BA_A_0012_0002.pdb
+resplicing cyclic chains
+mbb0002 000245 score0 fail 2 245 score0 2.94710592390547 rms -1 grade AFAA
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '28', '0']
+solution ./worms_mbb0002__0246_126-334_JHB7Yr2.pdb_ex214_en135_LHD289_DHR82_BA_A_0003_0003.pdb_ex432_en6_JHB7Yr2.pdb_ex432_en6_ABAA
+ 2193 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '25', '0']
+solution ./worms_mbb0002__0247_125-280_JHB7Yr2.pdb_ex180_en131_LHD289_DHR82_BA_A_0001_0015.pdb_ex431_en25_JHB7Yr2.pdb_ex431_en25_ABAB
+ 2187 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000248 score0 fail 2 248 score0 3.0544792656735886 rms -1 grade ABAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '28', '0']
+solution ./worms_mbb0002__0249_123-321_JHB7Yr2.pdb_ex208_en68_LHD289_DHR82_BA_A_0003_0003.pdb_ex429_en10_JHB7Yr2.pdb_ex429_en10_ABAA
+ 2199 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '55', '0']
+solution ./worms_mbb0002__0250_184-334_JHB7Yr2.pdb_ex184_en95_LHD289_DHR79_BA_A_0003_0004.pdb_ex515_en34_JHB7Yr2.pdb_ex515_en34_AFAA
+ 2202 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '49', '0']
+solution ./worms_mbb0002__0251_80-280_JHB7Yr2.pdb_ex210_en101_LHD289_DHR53_BA_A_0001_0008.pdb_ex337_en10_JHB7Yr2.pdb_ex337_en10_ABAA
+ 2185 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '35', '0']
+solution ./worms_mbb0002__0252_171-296_JHB7Yr2.pdb_ex179_en113_LHD289_DHR59_BA_A_0001_0019.pdb_ex435_en54_JHB7Yr2.pdb_ex435_en54_ABAB
+ 2186 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000253 score0 fail 2 253 score0 128.6786082443651 rms -1 grade ABAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '45', '0']
+solution ./worms_mbb0002__0254_171-336_JHB7Yr2.pdb_ex213_en136_LHD289_DHR53_BA_A_0005_0013.pdb_ex428_en48_JHB7Yr2.pdb_ex428_en48_AFBB
+ 2187 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '38', '0']
+solution ./worms_mbb0002__0255_121-244_JHB7Yr2.pdb_ex171_en71_LHD278_DHR46_BA_A_0003_0011.pdb_ex371_en48_JHB7Yr2.pdb_ex371_en48_AFAA
+ 2187 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '49', '0']
+solution ./worms_mbb0002__0256_77-191_JHB7Yr2.pdb_ex168_en32_LHD289_DHR53_BA_A_0001_0008.pdb_ex334_en54_JHB7Yr2.pdb_ex334_en54_AFAA
+ 2187 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000257 score0 fail 2 257 score0 1.2552146125776529 rms -1 grade ABAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '20', '0']
+solution ./worms_mbb0002__0258_100-228_JHB7Yr2.pdb_ex178_en136_LHD321_DHR53_BA_A_0015_0003.pdb_ex332_en50_JHB7Yr2.pdb_ex332_en50_ABAB
+ 2187 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000259 score0 fail 2 259 score0 2.4103977990818075 rms -1 grade ABAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '41', '0']
+solution ./worms_mbb0002__0260_165-328_JHB7Yr2.pdb_ex175_en70_LHD289_DHR21_BA_A_0014_0008.pdb_ex425_en12_JHB7Yr2.pdb_ex425_en12_AFAB
+ 2194 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000261 score0 fail 2 261 score0 1.101927009870656 rms -1 grade ABAA
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '45', '0']
+solution ./worms_mbb0002__0262_79-222_JHB7Yr2.pdb_ex172_en7_LHD289_DHR53_BA_A_0005_0013.pdb_ex336_en29_JHB7Yr2.pdb_ex336_en29_ABAB
+ 2189 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '49', '0']
+solution ./worms_mbb0002__0263_120-243_JHB7Yr2.pdb_ex170_en34_LHD289_DHR53_BA_A_0001_0008.pdb_ex377_en47_JHB7Yr2.pdb_ex377_en47_AFAA
+ 2188 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000264 score0 fail 2 264 score0 1.4414934268922643 rms -1 grade ABAA
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '25', '0']
+solution ./worms_mbb0002__0265_101-286_JHB7Yr2.pdb_ex209_en127_LHD289_DHR82_BA_A_0001_0015.pdb_ex407_en24_JHB7Yr2.pdb_ex407_en24_ABAA
+ 2188 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR54_BA_A_0006_0006.pdb
+resplicing cyclic chains
+mbb0002 000266 score0 fail 2 266 score0 10.640761552268309 rms -1 grade ABAA
+resplicing cyclic chains
+mbb0002 000267 score0 fail 2 267 score0 237.25535711177645 rms -1 grade ABAB
+resplicing cyclic chains
+mbb0002 000268 score0 fail 2 268 score0 1.2772007595939825 rms -1 grade AFAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '7', '0']
+solution ./worms_mbb0002__0269_102-277_JHB7Yr2.pdb_ex187_en101_LHD289_DHR53_BA_A_0004_0004.pdb_ex356_en12_JHB7Yr2.pdb_ex356_en12_ABAB
+ 2191 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '41', '0']
+solution ./worms_mbb0002__0270_186-321_JHB7Yr2.pdb_ex164_en58_LHD289_DHR21_BA_A_0014_0008.pdb_ex446_en29_JHB7Yr2.pdb_ex446_en29_ABAA
+ 2202 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '20', '0']
+solution ./worms_mbb0002__0271_108-286_JHB7Yr2.pdb_ex185_en143_LHD321_DHR53_BA_A_0015_0003.pdb_ex340_en7_JHB7Yr2.pdb_ex340_en7_ABBB
+ 2182 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '49', '0']
+solution ./worms_mbb0002__0272_105-289_JHB7Yr2.pdb_ex212_en96_LHD289_DHR53_BA_A_0001_0008.pdb_ex362_en28_JHB7Yr2.pdb_ex362_en28_ABAA
+ 2193 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '56', '0']
+solution ./worms_mbb0002__0273_171-376_JHB7Yr2.pdb_ex213_en144_LHD289_DHR53_BA_A_0006_0001.pdb_ex425_en8_JHB7Yr2.pdb_ex425_en8_ABAB
+ 2198 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '28', '0']
+solution ./worms_mbb0002__0274_188-338_JHB7Yr2.pdb_ex198_en98_LHD289_DHR82_BA_A_0003_0003.pdb_ex494_en48_JHB7Yr2.pdb_ex494_en48_ABBB
+ 2205 MEM dump pdb after
+resplicing cyclic chains
+mbb000002 0275 score0sym fail 20.941874270757655 rms -1 grade ABAB
+resplicing cyclic chains
+mbb0002 000276 score0 fail 2 276 score0 2.0476661656678705 rms -1 grade ABAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '45', '0']
+solution ./worms_mbb0002__0277_213-389_JHB7Yr2.pdb_ex183_en36_LHD289_DHR53_BA_A_0005_0013.pdb_ex470_en7_JHB7Yr2.pdb_ex470_en7_ABAA
+ 2186 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '4', '0']
+solution ./worms_mbb0002__0278_81-201_JHB7Yr2.pdb_ex164_en96_LHD289_DHR21_BA_A_0003_0006.pdb_ex318_en44_JHB7Yr2.pdb_ex318_en44_AFAB
+ 2186 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000279 score0 fail 2 279 score0 1.1094676693731003 rms -1 grade AFAA
+resplicing cyclic chains
+mbb000002 0280 score0sym fail 7.38152080387507 rms -1 grade ABBB
+resplicing cyclic chains
+mbb0002 000281 score0 fail 2 281 score0 53.20998913847959 rms -1 grade ABAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '13', '0']
+solution ./worms_mbb0002__0282_143-282_JHB7Yr2.pdb_ex169_en136_LHD278_DHR54_BA_A_0005_0002.pdb_ex425_en30_JHB7Yr2.pdb_ex425_en30_ABAA
+ 2190 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '33', '0']
+solution ./worms_mbb0002__0283_149-303_JHB7Yr2.pdb_ex178_en92_LHD289_DHR53_BA_A_0010_0001.pdb_ex396_en24_JHB7Yr2.pdb_ex396_en24_ABAB
+ 2194 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '56', '0']
+solution ./worms_mbb0002__0284_100-274_JHB7Yr2.pdb_ex184_en98_LHD289_DHR53_BA_A_0006_0001.pdb_ex354_en10_JHB7Yr2.pdb_ex354_en10_ABAB
+ 2194 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000285 score0 fail 2 285 score0 4.096922701178609 rms -1 grade AFAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '49', '0']
+solution ./worms_mbb0002__0286_124-274_JHB7Yr2.pdb_ex181_en145_LHD289_DHR53_BA_A_0001_0008.pdb_ex381_en31_JHB7Yr2.pdb_ex381_en31_AFAB
+ 2194 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '29', '0']
+solution ./worms_mbb0002__0287_171-286_JHB7Yr2.pdb_ex169_en129_LHD289_DHR59_BA_A_0009_0001.pdb_ex461_en54_JHB7Yr2.pdb_ex461_en54_ABAB
+ 2194 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000288 score0 fail 2 288 score0 1.23489101604828 rms -1 grade ABAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '20', '0']
+solution ./worms_mbb0002__0289_108-287_JHB7Yr2.pdb_ex186_en144_LHD321_DHR53_BA_A_0015_0003.pdb_ex340_en7_JHB7Yr2.pdb_ex340_en7_ABBB
+ 2194 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000290 score0 fail 2 290 score0 35.72480349302086 rms -1 grade ABAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '28', '0']
+solution ./worms_mbb0002__0291_210-362_JHB7Yr2.pdb_ex183_en120_LHD289_DHR82_BA_A_0003_0003.pdb_ex516_en31_JHB7Yr2.pdb_ex516_en31_AFAB
+ 2205 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '25', '0']
+solution ./worms_mbb0002__0292_81-253_JHB7Yr2.pdb_ex216_en137_LHD289_DHR82_BA_A_0001_0015.pdb_ex387_en44_JHB7Yr2.pdb_ex387_en44_ABAB
+ 2189 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000293 score0 fail 2 293 score0 1.4422207226432784 rms -1 grade ABAA
+resplicing cyclic chains
+mbb0002 000294 score0 fail 2 294 score0 1.4471678945152604 rms -1 grade AFAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '2', '0']
+solution ./worms_mbb0002__0295_76-245_JHB7Yr2.pdb_ex215_en135_LHD289_DHR53_BA_A_0009.pdb_ex330_en46_JHB7Yr2.pdb_ex330_en46_AFAB
+ 2189 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000296 score0 fail 2 296 score0 2.5436249902170536 rms -1 grade ABAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '42', '0']
+solution ./worms_mbb0002__0297_168-326_JHB7Yr2.pdb_ex183_en58_LHD289_DHR62_BA_A_0001_0007.pdb_ex426_en25_JHB7Yr2.pdb_ex426_en25_ABAB
+ 2202 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000298 score0 fail 2 298 score0 2.379484368927701 rms -1 grade AFAA
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '59', '0']
+solution ./worms_mbb0002__0299_104-271_JHB7Yr2.pdb_ex177_en91_LHD278_DHR52_BA_A_0001_0005.pdb_ex366_en10_JHB7Yr2.pdb_ex366_en10_ABAA
+ 2192 MEM dump pdb after
+clear db 2192.9453125 2192.9453125 0.0
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '26', '0']
+solution ./worms_mbb0002__0300_221-397_JHB7Yr2.pdb_ex181_en104_LHD317_DHR59_BA_A_0003_0003.pdb_ex496_en5_JHB7Yr2.pdb_ex496_en5_ABAA
+ 2185 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000301 score0 fail 2 301 score0 1.2456034694006128 rms -1 grade ABAA
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD275_DHR62_BA_A_0001_0005.pdb
+resplicing cyclic chains
+mbb0002 000302 score0 fail 2 302 score0 2.3558510588116266 rms -1 grade ABAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '43', '0']
+solution ./worms_mbb0002__0303_167-325_JHB7Yr2.pdb_ex172_en43_LHD289_DHR59_BA_A_0001_0017.pdb_ex464_en14_JHB7Yr2.pdb_ex464_en14_AFBB
+ 2193 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '2', '0']
+solution ./worms_mbb0002__0304_125-282_JHB7Yr2.pdb_ex182_en96_LHD289_DHR53_BA_A_0009.pdb_ex379_en25_JHB7Yr2.pdb_ex379_en25_AFAB
+ 2199 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '49', '0']
+solution ./worms_mbb0002__0305_212-360_JHB7Yr2.pdb_ex181_en95_LHD289_DHR53_BA_A_0001_0008.pdb_ex469_en33_JHB7Yr2.pdb_ex469_en33_AFAB
+ 2209 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000306 score0 fail 2 306 score0 2.581198556252366 rms -1 grade AFAB
+resplicing cyclic chains
+mbb0002 000307 score0 fail 2 307 score0 33.265259712898036 rms -1 grade ABAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '50', '0']
+solution ./worms_mbb0002__0308_85-205_JHB7Yr2.pdb_ex168_en100_LHD289_DHR21_BA_A_0014_0001.pdb_ex322_en48_JHB7Yr2.pdb_ex322_en48_AFAA
+ 2209 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000309 score0 fail 2 309 score0 6.134983087520412 rms -1 grade AFAA
+resplicing cyclic chains
+mbb0002 000310 score0 fail 2 310 score0 2.4693014316395754 rms -1 grade ABAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '45', '0']
+solution ./worms_mbb0002__0311_117-264_JHB7Yr2.pdb_ex178_en92_LHD289_DHR53_BA_A_0005_0013.pdb_ex374_en31_JHB7Yr2.pdb_ex374_en31_AFAB
+ 2197 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '23', '0']
+solution ./worms_mbb0002__0312_83-246_JHB7Yr2.pdb_ex209_en119_LHD289_DHR21_BA_A_0003_0007.pdb_ex316_en46_JHB7Yr2.pdb_ex316_en46_ABAB
+ 2197 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000313 score0 fail 2 313 score0 1.3900113459365924 rms -1 grade ABAA
+resplicing cyclic chains
+mbb0002 000314 score0 fail 2 314 score0 1.360439968495065 rms -1 grade AFAB
+resplicing cyclic chains
+mbb0002 000315 score0 fail 2 315 score0 1.316612149646196 rms -1 grade AFAB
+resplicing cyclic chains
+mbb0002 000316 score0 fail 2 316 score0 50.11062539794646 rms -1 grade AFAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '7', '0']
+solution ./worms_mbb0002__0317_103-223_JHB7Yr2.pdb_ex173_en134_LHD289_DHR53_BA_A_0004_0004.pdb_ex357_en53_JHB7Yr2.pdb_ex357_en53_ABAB
+ 2197 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '49', '0']
+solution ./worms_mbb0002__0318_127-303_JHB7Yr2.pdb_ex183_en29_LHD289_DHR53_BA_A_0001_0008.pdb_ex384_en7_JHB7Yr2.pdb_ex384_en7_ABAA
+ 2210 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '28', '0']
+solution ./worms_mbb0002__0319_190-375_JHB7Yr2.pdb_ex212_en123_LHD289_DHR82_BA_A_0003_0003.pdb_ex496_en27_JHB7Yr2.pdb_ex496_en27_ABAA
+ 2213 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '7', '0']
+solution ./worms_mbb0002__0320_125-293_JHB7Yr2.pdb_ex213_en144_LHD289_DHR53_BA_A_0004_0004.pdb_ex379_en45_JHB7Yr2.pdb_ex379_en45_AFBB
+ 2194 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000321 score0 fail 2 321 score0 1.5721105116637561 rms -1 grade ABAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '44', '0']
+solution ./worms_mbb0002__0322_210-373_JHB7Yr2.pdb_ex187_en133_LHD289_DHR80_BA_A_0003_0001.pdb_ex510_en24_JHB7Yr2.pdb_ex510_en24_ABAB
+ 2211 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '38', '0']
+solution ./worms_mbb0002__0323_84-237_JHB7Yr2.pdb_ex180_en47_LHD278_DHR46_BA_A_0003_0011.pdb_ex334_en27_JHB7Yr2.pdb_ex334_en27_AFAB
+ 2198 MEM dump pdb after
+resplicing cyclic chains
+mbb000002 0324 score0sym fail 25.852427354309384 rms -1 grade ABBB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '59', '0']
+solution ./worms_mbb0002__0325_151-267_JHB7Yr2.pdb_ex170_en6_LHD278_DHR52_BA_A_0001_0005.pdb_ex413_en54_JHB7Yr2.pdb_ex413_en54_ABBB
+ 2209 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000326 score0 fail 2 326 score0 246.84128848744663 rms -1 grade ABAB
+resplicing cyclic chains
+mbb0002 000327 score0 fail 2 327 score0 1.0851802988113588 rms -1 grade ABAB
+resplicing cyclic chains
+mbb000002 0328 score0sym fail 5.086211145299983 rms -1 grade AFBB
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD289_DHR82_BA_A_0003_0004.pdb
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '62', '0']
+solution ./worms_mbb0002__0329_75-242_JHB7Yr2.pdb_ex172_en140_LHD289_DHR82_BA_A_0003_0004.pdb_ex401_en5_JHB7Yr2.pdb_ex401_en5_ABAA
+ 2209 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '30', '0']
+solution ./worms_mbb0002__0330_213-379_JHB7Yr2.pdb_ex173_en133_LHD278_DHR09_BA_A_0009.pdb_ex490_en7_JHB7Yr2.pdb_ex490_en7_ABAA
+ 2217 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '32', '0']
+solution ./worms_mbb0002__0331_143-328_JHB7Yr2.pdb_ex215_en63_LHD289_DHR59_BA_A_0001_0003.pdb_ex417_en30_JHB7Yr2.pdb_ex417_en30_ABAA
+ 2199 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '49', '0']
+solution ./worms_mbb0002__0332_146-335_JHB7Yr2.pdb_ex198_en36_LHD289_DHR53_BA_A_0001_0008.pdb_ex403_en9_JHB7Yr2.pdb_ex403_en9_AFAA
+ 2221 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000333 score0 fail 2 333 score0 270.5382456008573 rms -1 grade ABAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '4', '0']
+solution ./worms_mbb0002__0334_81-252_JHB7Yr2.pdb_ex215_en125_LHD289_DHR21_BA_A_0003_0006.pdb_ex318_en44_JHB7Yr2.pdb_ex318_en44_ABAB
+ 2198 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000335 score0 fail 2 335 score0 2.9301180415266543 rms -1 grade ABAA
+resplicing cyclic chains
+mbb0002 000336 score0 fail 2 336 score0 22.357574867669182 rms -1 grade AFAA
+resplicing cyclic chains
+Warning: junction residue not helix:  343
+mbb0002 000337 score0 fail 2 337 score0 2.4222060792935927 rms -1 grade AFBB
+resplicing cyclic chains
+mbb0002 000338 score0 fail 2 338 score0 2.1877996823176535 rms -1 grade ABAA
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '2', '0']
+solution ./worms_mbb0002__0339_145-329_JHB7Yr2.pdb_ex216_en136_LHD289_DHR53_BA_A_0009.pdb_ex399_en32_JHB7Yr2.pdb_ex399_en32_ABAB
+ 2208 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '30', '0']
+solution ./worms_mbb0002__0340_147-337_JHB7Yr2.pdb_ex200_en141_LHD278_DHR09_BA_A_0009.pdb_ex424_en10_JHB7Yr2.pdb_ex424_en10_AFAA
+ 2211 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '25', '0']
+solution ./worms_mbb0002__0341_84-253_JHB7Yr2.pdb_ex216_en137_LHD289_DHR82_BA_A_0001_0015.pdb_ex390_en47_JHB7Yr2.pdb_ex390_en47_ABAB
+ 2204 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '39', '0']
+solution ./worms_mbb0002__0342_184-357_JHB7Yr2.pdb_ex200_en102_LHD289_DHR76_BA_A_0001_0020.pdb_ex465_en27_JHB7Yr2.pdb_ex465_en27_AFAA
+ 2195 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000343 score0 fail 2 343 score0 2.674884795202967 rms -1 grade ABAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '2', '0']
+solution ./worms_mbb0002__0344_81-230_JHB7Yr2.pdb_ex180_en94_LHD289_DHR53_BA_A_0009.pdb_ex335_en31_JHB7Yr2.pdb_ex335_en31_ABAB
+ 2200 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '38', '0']
+solution ./worms_mbb0002__0345_100-283_JHB7Yr2.pdb_ex213_en82_LHD278_DHR46_BA_A_0003_0011.pdb_ex350_en30_JHB7Yr2.pdb_ex350_en30_ABBB
+ 2208 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '20', '0']
+solution ./worms_mbb0002__0346_124-286_JHB7Yr2.pdb_ex186_en7_LHD321_DHR53_BA_A_0015_0003.pdb_ex356_en24_JHB7Yr2.pdb_ex356_en24_ABAB
+ 2215 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '55', '0']
+solution ./worms_mbb0002__0347_184-351_JHB7Yr2.pdb_ex214_en95_LHD289_DHR79_BA_A_0003_0004.pdb_ex515_en47_JHB7Yr2.pdb_ex515_en47_ABAB
+ 2205 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '42', '0']
+solution ./worms_mbb0002__0348_125-327_JHB7Yr2.pdb_ex214_en9_LHD289_DHR62_BA_A_0001_0007.pdb_ex383_en12_JHB7Yr2.pdb_ex383_en12_AFAA
+ 2197 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '23', '0']
+solution ./worms_mbb0002__0349_79-242_JHB7Yr2.pdb_ex172_en104_LHD289_DHR21_BA_A_0003_0007.pdb_ex312_en9_JHB7Yr2.pdb_ex312_en9_ABAA
+ 2198 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '55', '0']
+solution ./worms_mbb0002__0350_210-373_JHB7Yr2.pdb_ex174_en44_LHD289_DHR79_BA_A_0003_0004.pdb_ex541_en11_JHB7Yr2.pdb_ex541_en11_AFAB
+ 2209 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000351 score0 fail 2 351 score0 1.3881406518321961 rms -1 grade ABAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '54', '0']
+solution ./worms_mbb0002__0352_149-324_JHB7Yr2.pdb_ex180_en115_LHD289_DHR52_BA_A_0006_0002.pdb_ex427_en5_JHB7Yr2.pdb_ex427_en5_ABBB
+ 2213 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '28', '0']
+solution ./worms_mbb0002__0353_126-335_JHB7Yr2.pdb_ex215_en20_LHD289_DHR82_BA_A_0003_0003.pdb_ex432_en6_JHB7Yr2.pdb_ex432_en6_ABAA
+ 2208 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '45', '0']
+solution ./worms_mbb0002__0354_192-383_JHB7Yr2.pdb_ex215_en114_LHD289_DHR53_BA_A_0005_0013.pdb_ex449_en24_JHB7Yr2.pdb_ex449_en24_ABAB
+ 2217 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '1', '0']
+solution ./worms_mbb0002__0355_84-241_JHB7Yr2.pdb_ex184_en83_LHD289_DHR57_BA_A_0001_0006.pdb_ex374_en27_JHB7Yr2.pdb_ex374_en27_AFAB
+ 2217 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000356 score0 fail 2 356 score0 1.2964091479369362 rms -1 grade ABAB
+resplicing cyclic chains
+mbb0002 000357 score0 fail 2 357 score0 2.0593307876437343 rms -1 grade AFAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '54', '0']
+solution ./worms_mbb0002__0358_149-328_JHB7Yr2.pdb_ex203_en12_LHD289_DHR52_BA_A_0006_0002.pdb_ex427_en24_JHB7Yr2.pdb_ex427_en24_ABAA
+ 2205 MEM dump pdb after
+resplicing cyclic chains
+mbb000002 0359 score0sym fail 112.11082742866944 rms -1 grade ABAB
+resplicing cyclic chains
+mbb0002 000360 score0 fail 2 360 score0 151.15291537526267 rms -1 grade ABAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '59', '0']
+solution ./worms_mbb0002__0361_189-364_JHB7Yr2.pdb_ex184_en95_LHD278_DHR52_BA_A_0001_0005.pdb_ex451_en9_JHB7Yr2.pdb_ex451_en9_ABAB
+ 2218 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '25', '0']
+solution ./worms_mbb0002__0362_84-227_JHB7Yr2.pdb_ex170_en125_LHD289_DHR82_BA_A_0001_0015.pdb_ex390_en27_JHB7Yr2.pdb_ex390_en27_ABAB
+ 2202 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '59', '0']
+solution ./worms_mbb0002__0363_142-305_JHB7Yr2.pdb_ex168_en90_LHD278_DHR52_BA_A_0001_0005.pdb_ex404_en5_JHB7Yr2.pdb_ex404_en5_ABBB
+ 2211 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '3', '0']
+solution ./worms_mbb0002__0364_126-336_JHB7Yr2.pdb_ex216_en132_LHD289_DHR46_BA_A_0003_0002.pdb_ex369_en6_JHB7Yr2.pdb_ex369_en6_ABAB
+ 2211 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000365 score0 fail 2 365 score0 189.4137588364942 rms -1 grade ABAB
+resplicing cyclic chains
+mbb0002 000366 score0 fail 2 366 score0 1.146853755615336 rms -1 grade ABAA
+resplicing cyclic chains
+mbb000002 0367 score0sym fail 27.117499854572767 rms -1 grade ABAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '38', '0']
+solution ./worms_mbb0002__0368_102-219_JHB7Yr2.pdb_ex169_en122_LHD278_DHR46_BA_A_0003_0011.pdb_ex352_en52_JHB7Yr2.pdb_ex352_en52_AFAB
+ 2211 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000369 score0 fail 2 369 score0 1.373409308556482 rms -1 grade ABAA
+resplicing cyclic chains
+mbb0002 000370 score0 fail 2 370 score0 147.31131818479992 rms -1 grade ABAB
+resplicing cyclic chains
+mbb0002 000371 score0 fail 2 371 score0 2.273882253129595 rms -1 grade ABAB
+resplicing cyclic chains
+mbb0002 000372 score0 fail 2 372 score0 3.083180228591138 rms -1 grade ABAB
+resplicing cyclic chains
+mbb0002 000373 score0 fail 2 373 score0 1.9735308601054866 rms -1 grade ABAA
+resplicing cyclic chains
+mbb0002 000374 score0 fail 2 374 score0 2.710529023473591 rms -1 grade AFAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '2', '0']
+solution ./worms_mbb0002__0375_124-281_JHB7Yr2.pdb_ex181_en95_LHD289_DHR53_BA_A_0009.pdb_ex378_en24_JHB7Yr2.pdb_ex378_en24_AFAB
+ 2207 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '13', '0']
+solution ./worms_mbb0002__0376_99-298_JHB7Yr2.pdb_ex204_en141_LHD278_DHR54_BA_A_0005_0002.pdb_ex381_en5_JHB7Yr2.pdb_ex381_en5_ABAA
+ 2207 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000377 score0 fail 2 377 score0 16.801164454499734 rms -1 grade ABAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '45', '0']
+solution ./worms_mbb0002__0378_127-323_JHB7Yr2.pdb_ex210_en51_LHD289_DHR53_BA_A_0005_0013.pdb_ex384_en14_JHB7Yr2.pdb_ex384_en14_AFAA
+ 2217 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000379 score0 fail 2 379 score0 1.1807581116484742 rms -1 grade ABAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '49', '0']
+solution ./worms_mbb0002__0380_103-228_JHB7Yr2.pdb_ex178_en138_LHD289_DHR53_BA_A_0001_0008.pdb_ex360_en53_JHB7Yr2.pdb_ex360_en53_ABBB
+ 2195 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '44', '0']
+solution ./worms_mbb0002__0381_161-312_JHB7Yr2.pdb_ex183_en122_LHD289_DHR80_BA_A_0003_0001.pdb_ex461_en32_JHB7Yr2.pdb_ex461_en32_AFAB
+ 2213 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '7', '0']
+solution ./worms_mbb0002__0382_184-349_JHB7Yr2.pdb_ex199_en37_LHD289_DHR53_BA_A_0004_0004.pdb_ex438_en34_JHB7Yr2.pdb_ex438_en34_AFAA
+ 2200 MEM dump pdb after
+resplicing cyclic chains
+mbb000002 0383 score0sym fail 19.340748919550936 rms -1 grade ABAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '48', '0']
+solution ./worms_mbb0002__0384_82-212_JHB7Yr2.pdb_ex175_en136_LHD289_DHR82_BA_A_0005_0006.pdb_ex415_en45_JHB7Yr2.pdb_ex415_en45_ABAB
+ 2203 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000385 score0 fail 2 385 score0 41.03748005071398 rms -1 grade ABAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '14', '0']
+solution ./worms_mbb0002__0386_125-276_JHB7Yr2.pdb_ex183_en90_LHD289_DHR53_BA_A_0001_0017.pdb_ex379_en32_JHB7Yr2.pdb_ex379_en32_AFAB
+ 2207 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000387 score0 fail 2 387 score0 1.0528933637180362 rms -1 grade AFAA
+resplicing cyclic chains
+mbb0002 000388 score0 fail 2 388 score0 52.92673235133891 rms -1 grade ABAA
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '55', '0']
+solution ./worms_mbb0002__0389_210-387_JHB7Yr2.pdb_ex207_en96_LHD289_DHR79_BA_A_0003_0004.pdb_ex541_en30_JHB7Yr2.pdb_ex541_en30_ABAA
+ 2210 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '47', '0']
+solution ./worms_mbb0002__0390_184-366_JHB7Yr2.pdb_ex210_en134_LHD278_DHR53_BA_A_0003_0003.pdb_ex442_en28_JHB7Yr2.pdb_ex442_en28_ABAB
+ 2213 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '28', '0']
+solution ./worms_mbb0002__0391_82-229_JHB7Yr2.pdb_ex172_en134_LHD289_DHR82_BA_A_0003_0003.pdb_ex388_en25_JHB7Yr2.pdb_ex388_en25_ABAB
+ 2213 MEM dump pdb after
+resplicing cyclic chains
+mbb0002 000392 score0 fail 2 392 score0 34.321262575067514 rms -1 grade ABAB
+resplicing cyclic chains
+mbb0002 000393 score0 fail 2 393 score0 3.5488764332326683 rms -1 grade ABAB
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '55', '0']
+solution ./worms_mbb0002__0394_122-284_JHB7Yr2.pdb_ex211_en149_LHD289_DHR79_BA_A_0003_0004.pdb_ex453_en49_JHB7Yr2.pdb_ex453_en49_AFAB
+ 2213 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '1', '0']
+solution ./worms_mbb0002__0395_184-339_JHB7Yr2.pdb_ex202_en78_LHD289_DHR57_BA_A_0001_0006.pdb_ex474_en47_JHB7Yr2.pdb_ex474_en47_AFAB
+ 2220 MEM dump pdb after
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '42', '0']
+solution ./worms_mbb0002__0396_168-338_JHB7Yr2.pdb_ex215_en139_LHD289_DHR62_BA_A_0001_0007.pdb_ex426_en45_JHB7Yr2.pdb_ex426_en45_AFBB
+ 2209 MEM dump pdb after
+reading pdb /home/apillai1/Bridge/4_fusion_bridge/af2_validated/sel_rmsd2-5_plddt88/design/LHD278_DHR54_BA_A_0003_0014.pdb
+resplicing cyclic chains
+mbb0002 000397 score0 fail 2 397 score0 1.3266391912066808 rms -1 grade AFAA
+resplicing cyclic chains
+!!!!!!! 2 mseg 0 ['0', '20', '0']
+solution ./worms_mbb0002__0398_102-276_JHB7Yr2.pdb_ex186_en50_LHD321_DHR53_BA_A_0015_0003.pdb_ex334_en12_JHB7Yr2.pdb_ex334_en12_ABAB
+ 2216 MEM dump pdb after
+split job over merge_segment=0, n = 3
+======================== logs ========================
+
+
+
+split job over merge_segment=0, n = 3
+    mbb0000 nresults after clash/geom check 89
+nresults output50
+    mbb0001 nresults after clash/geom check 318
+nresults output199
+    mbb0002 nresults after clash/geom check 399
+nresults output218
+======================== done ========================
+core.init: Rosetta version: 2017.48.post.dev+119.fordas.devbase.cce4ea9c848 cce4ea9c848fb89054e27458cfec117fb00bd601 git@github.com:RosettaCommons/main.git 2018-04-16T01:42:35
+core.init: command: PyRosetta -mute all -beta -preserve_crystinfo --prevent_repacking -database /home/sheffler/.conda/envs/worms/lib/python3.6/site-packages/pyrosetta/database
+core.init: 'RNG device' seed mode, using '/dev/urandom', seed=838699419 seed_offset=0 real_seed=838699419
+core.init.random: RandomGenerator:init: Normal mode, seed=838699419 RG_type=mt19937

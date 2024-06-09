@@ -1,0 +1,27 @@
+--geometry Cyclic(2)
+--bbconn
+    _C hingeY
+    NC LHD_NC
+    N_ hingeY
+
+--no_duplicate_bases 0
+--parallel -1
+--monte_carlo 0
+--pbar 1
+--disable_cache 1
+--tolerance 0.5
+--lever 25
+--hash_cart_resl 2
+--hash_ori_resl 15
+--splice_rms_range 4
+--splice_max_rms 1.0
+--splice_clash_contact_by_helix=1
+--splice_ncontact_cut 10
+--splice_ncontact_no_helix_cut 1
+--splice_nhelix_contacted_cut 1
+--splice_max_chain_length 9999
+--max_score0 1.0
+--dbfiles
+    /home/apillai1/switchable_ring_pipeline/worms_database/worms_database.json
+
+
