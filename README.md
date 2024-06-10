@@ -1,4 +1,4 @@
-###De novo design of allosterically switchable protein assembles
+### De novo design of allosterically switchable protein assembles
 
 The following tools used in Pillai et al. can be obtained from the GitHub repositories listed below
 RF-Diffusion
@@ -9,7 +9,7 @@ ProteinMPNN
 Install apptainer so that you can run this code without installing python packages, but rather with a prepackaged sif file: https://apptainer.org/docs/admin/main/installation.html
 
 Download the relevant .sif files
-'''wget http://files.ipd.uw.edu/pub/RF-All-Atom/containers/rf_se3_diffusion.sif'''
+```wget http://files.ipd.uw.edu/pub/RF-All-Atom/containers/rf_se3_diffusion.sif```
 
 Download worms and worms_conda:
 wget 
