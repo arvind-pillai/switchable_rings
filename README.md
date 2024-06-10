@@ -1,30 +1,42 @@
-### De novo design of allosterically switchable protein assembles
+# De novo design of allosterically switchable protein assembles
 
-[![B1-C3-to-C4.png](https://i.postimg.cc/m2P7y0fH/B1-C3-to-C4.png)](https://postimg.cc/Mv8cW3G6)
+[![B1-C3-to-C4.jpg](https://i.postimg.cc/s2mBrcCz/B1-C3-to-C4.jpg)](https://postimg.cc/v11875m2)
 
 
 The following tools used in Pillai et al. 2024 can be obtained from the GitHub repositories listed below
 
-RF-Diffusion
+### Relevant repositores
 
-Worms
+RF-Diffusion: https://github.com/RosettaCommons/RFdiffusion
 
-RPXDock
+Worms: https://github.com/mingkangyang/worms-
 
-ProteinMPNN
+ProteinMPNN: https://github.com/dauparas/ProteinMPNN
 
+Superfold: https://github.com/rdkibler/superfold
+
+### Installing and running pipelines
+
+This pipeline generates hinge-containing rings whose interfaces are derived from LHDs. These scripts were written to be run on the Institute of Protein Design's DIGs server, however, minor modifications of path filenames (denoted by comments in each script) should allow these scripts to be adapted for other platforms.
 
 Install apptainer so that you can run this code without installing python packages, but rather with a prepackaged sif file: https://apptainer.org/docs/admin/main/installation.html
 
-Download the relevant .sif files
-```wget http://files.ipd.uw.edu/pub/RF-All-Atom/containers/rf_se3_diffusion.sif```
+Download the following .sif files and zip files for worms and worms_conda 
+
+```wget http://files.ipd.uw.edu/pub/switchable_rings/pyrosetta.sif```
+
+```wget http://files.ipd.uw.edu/pub/switchable_rings/mlfold.sif```
+
+```wget http://files.ipd.uw.edu/pub/switchable_rings/worms.zip```
+
+```wget http://files.ipd.uw.edu/pub/switchable_rings/worms_conda.zip```
+
 
 Download worms and worms_conda:
 wget 
 
 This pipeline generates hinge-containing rings whose interfaces are derived from LHDs.
 
-These scripts were written to be run on the Institute of Protein Design's DIGs server, however, minor modifications of path filenames (denoted by comments in each script) should allow these scripts to be adapted for other platforms. The design procedure for the generation of switchable rings consists of running the following scripts in the sequence described below.
 
 1) WORMs based generation of Y-state ring scaffolds, using building blocks shown in /building_blocks/hinges_used (for cs221Y, JHB7Y and FF74Y) and /building_blocks/LHD_DHRs for LHD-DHR fusions. Example C2, C3 and C4 ring scaffolds are deposited in separate folders with those respective names. THe FLAGs provided to WORMS are shown in the file: t32_oneDHR.flags, while the server submission request is shown in cyclic_protocol.sh for each. The WORMS database used, along with filenames and splicing conditions used is deposited in /worms_database as a json file. 
 
