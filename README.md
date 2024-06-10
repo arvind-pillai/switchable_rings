@@ -1,10 +1,18 @@
 ### De novo design of allosterically switchable protein assembles
 
-The following tools used in Pillai et al. can be obtained from the GitHub repositories listed below
+[![B1-C3-to-C4.png](https://i.postimg.cc/m2P7y0fH/B1-C3-to-C4.png)](https://postimg.cc/Mv8cW3G6)
+
+
+The following tools used in Pillai et al. 2024 can be obtained from the GitHub repositories listed below
+
 RF-Diffusion
+
 Worms
+
 RPXDock
+
 ProteinMPNN
+
 
 Install apptainer so that you can run this code without installing python packages, but rather with a prepackaged sif file: https://apptainer.org/docs/admin/main/installation.html
 
