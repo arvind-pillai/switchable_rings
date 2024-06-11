@@ -45,7 +45,7 @@ This pipeline generates hinge-containing rings whose interfaces are derived from
 
 3) ```/path/to/pyrosetta.sif 02_MPNN_fix_residues.py``` identifies a subset of fusion-modified junction residues for redesign, while fixing key hinge residues, generating a file called fixed_pos.jsonl that includes residues that should remain unchanged during MPNN redesign.
 
-4) Use the jupyter notebook, 03_MPNN_loading_example.ipynb to generate additional files required for MPNN, including pdbs_test.jsonl and pdbs_masked.jsonl. Use shifty.sif as environment.
+4) Use the jupyter notebook, 03_MPNN_loading_example.ipynb to generate additional files required for MPNN, including pdbs_test.jsonl and pdbs_masked.jsonl. Use mlfold.sif as environment.
 
 5) ```sbatch 04_MPNN.sh``` submits an MPNN job to the DIGs server, depositing redesigned sequences in /MPNN_outputs/alignments
 
