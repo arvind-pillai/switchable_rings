@@ -17,7 +17,7 @@ Superfold: https://github.com/rdkibler/superfold
 
 ### Installing and running pipelines
 
-This pipeline generates hinge-containing rings whose interfaces are derived from LHDs. These scripts were written to be run on the Institute of Protein Design's DIGs server, however, minor modifications of path filenames (denoted by comments in each script) should allow these scripts to be adapted for other platforms.
+This pipeline generates hinge-containing rings whose interfaces are derived from LHDs. These scripts were written to be run on the Institute of Protein Design's DIGs server, however, minor modifications of path filenames (denoted by comments in each script) should allow these scripts to be adapted for other platforms. It can currently be run on linux.
 
 Install apptainer so that you can run this code without installing python packages, but rather with a prepackaged sif file: https://apptainer.org/docs/admin/main/installation.html
 
@@ -31,9 +31,6 @@ Download the following .sif files and zip files for worms and worms_conda
 
 ```wget http://files.ipd.uw.edu/pub/switchable_rings/worms_conda.zip```
 
-
-Download worms and worms_conda:
-wget 
 
 This pipeline generates hinge-containing rings whose interfaces are derived from LHDs. The steps are listed below
 
