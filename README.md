@@ -3,6 +3,9 @@
 [![B1-C3-to-C4.jpg](https://i.postimg.cc/s2mBrcCz/B1-C3-to-C4.jpg)](https://postimg.cc/v11875m2)
 
 
+For sequences of key designs in Pillai1 et al. see design_sequences.txt
+
+
 The following tools used in Pillai et al. 2024 can be obtained from the GitHub repositories listed below
 
 ### Relevant repositores
