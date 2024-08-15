@@ -3,8 +3,9 @@
 [![B1-C3-to-C4.jpg](https://i.postimg.cc/s2mBrcCz/B1-C3-to-C4.jpg)](https://postimg.cc/v11875m2)
 
 
-For sequences of key designs in Pillai1 et al. see design_sequences.txt
+For sequences of key designs in Pillai et al. 2024 see ```design_sequences.txt``` in this repository.
 
+For PDB models in Pillai et al. 2024 see compressed file ```Supplementary_materials.zip``` in this repository.
 
 The following tools used in Pillai et al. 2024 can be obtained from the GitHub repositories listed below
 
