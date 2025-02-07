@@ -2,6 +2,7 @@
 
 [![B1-C3-to-C4.jpg](https://i.postimg.cc/s2mBrcCz/B1-C3-to-C4.jpg)](https://postimg.cc/v11875m2)
 
+Update: Incorrect sequences for sr119 and D3_29 were previously uploaded, these have now been updated.
 
 For sequences of key designs in Pillai et al. 2024 see ```design_sequences.txt``` in this repository.
 
